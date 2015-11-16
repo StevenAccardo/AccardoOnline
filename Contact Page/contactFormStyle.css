@@ -1,0 +1,132 @@
+
+
+body {
+	padding: 50px 100px;
+	font-size: 100%;
+	font-style: Arial, 'Lucida Sans Unicode';
+	background: #850000; /*Dark Red*/
+	background: -webkit-linear-gradient(to right bottom, #850000, #000000);
+	background: -moz-linear-gradient(to right bottom, #850000, #000000);
+	background: linear-gradient(to right bottom, #850000, #000000);
+}
+
+a {
+	text-decoration: none;
+}
+
+.mainheader nav {
+	background-color: #696969; /*grey*/
+	height: 40px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.mainheader nav ul{
+	list-style:none;
+	margin:0 auto;
+}
+
+.mainheader nav ul li{
+	float: left;
+	display: inline;
+}
+
+.mainheader nav a:link, .mainheader nav a:visited {
+	color: #FFF; /*white*/
+	display: inline-block;
+	padding: 10px 25px;
+	height: 20px;
+}
+
+.mainheader nav a:hover, .mainheader nav a:active, .mainheader nav .active a:link, .mainheader nav .active a:visited {
+	background-color: #ff0000; /*red*/
+	text-shadow: none;
+}
+
+.mainheader nav ul li a {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+h2 {
+	margin-bottom: 20px;
+	color: #696969;
+}
+
+input, textarea {
+	padding:10px;
+	border: 1px solid #E5E5E5;
+	width: 200px;
+	color: 999999;
+	-webkit-box-shadow: rgba(0,0,0,0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0,0,0,0.1) 0px 0px 8px;
+	box-shadow: rgba(0,0,0,0.1) 0px 0px 8px;
+}
+
+textarea {
+	width: 400px;
+	height: 150px;
+	max-width: 400px;
+	line-height: 10px;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+	border-color: 1px solid #C9C9C9;
+	-webkit-box-shadow: rgba(255,0,0,1.0) 0px 0px 10px;
+	-moz-box-shadow: rgba(255,0,0,1.0) 0px 0px 10px;
+	box-shadow: rgba(255,0,0,1.0) 0px 0px 10px;
+}
+
+.form label {
+	margin-left: 10px;
+	color: #999999;
+}
+
+.submit input {
+	width: 100px;
+	height: 40px;
+	background-color: #696969;
+	color: #FFF;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+@media only screen and (min-width: 150px) and (max-width: 600px)
+{
+	body {
+		width: 90%;
+		font-size: 80%;
+		padding: 0px 0px;
+	}
+	
+	textarea {
+		width: 100%;
+	}
+	
+	.submit input {
+		width: 100%;
+	}
+	
+	.mainheader nav {
+		height: 160px;
+	}
+
+	.mainheader nav ul{
+		padding-left: 0;
+	}
+
+	.mainheader nav ul li{
+		width: 100%;
+		text-align: center;
+	}
+
+	.mainheader nav a:link, .mainheader nav a:visited {
+		padding: 10px 25px;
+		height: 20px;
+		display: block;
+	}
+}
+

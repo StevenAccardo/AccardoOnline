@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Contact Form</title>
+	<meta charset = "utf-8"/>
+	<link rel = "stylesheet" type = "text/css" href = "contactFormStyle.css"/>
+	<meta name = "viewport" content = "width = device - width, initial-scale = 1.0"/>
+</head>
+
+<body>
+
+	<header class="mainheader">
+		<nav><ul>
+			<li><a href="http://www.accardoonline.com">Home</a></li>
+			<li><a href="#">Website Templates</a></li>
+			<li><a href="#">Web App</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul></nav>
+	</header>
+
+	<h2>This contact form is operational and was created using HTML5, CSS3, and PHP.<h2>
+
+	<h2>Contact Form</h2>
+	
+	<form class="form" action = "email_script.php" method = "POST">
+	
+		<p class="name">
+			<input type="text" name="name" id="name" placeholder="John Doe"/>
+			<label for="name">Name</label>
+		</p>
+		
+		<p class="email">
+			<input type="text" name="email" id="email" placeholder="mail@example.com"/>
+			<label for="email">Email</label>
+		</p>
+		
+		<p class="subject">
+			<input type="text" name="subject" id="subject" placeholder="Title"/>
+			<label for="subject">Subject</label>
+		</p>
+		
+		<p class="message">
+			<textarea name = "message" placeholder="Write.."/></textarea>
+		</p>
+		
+		<p class="submit">
+		<input type="submit" name = "submit" value="Send"/>
+		</p>
+	</form>
+
+</body>
+</html>
