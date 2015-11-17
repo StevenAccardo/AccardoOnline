@@ -5,10 +5,13 @@
 body {
 	background-image: url('Images/BlueprintBackground.jpg');
 	color: #000305;
-	font-size: 87.5%; //Base font size is 14px
-	font-family: Arial, 'Lucida Sans Unicode';
+	font-size: 87.5%; /*Base font size is 14px*/
 	line-height: 1.5;
 	text-align: left;
+}
+
+h4 {
+	color: #404040;
 }
 
 a {
@@ -121,12 +124,14 @@ a:hover, a:active {
 	-webkit-border-radius: 5px;
 	padding: 3% 5%;
 	margin-top: 2%;
+	height: 210px;
 }
 
 .top-sidebar {
 	width: 21%;
 	float: left;
 	background-color: #FFF;
+	color: #0fb3ff;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;

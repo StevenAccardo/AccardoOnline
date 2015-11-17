@@ -2,12 +2,17 @@
 
 <?PHP
 $from = "test@accardoonline.com";
-$email = "accardo.steven@gmail.com";
+$to = "accardo.steven@gmail.com";
+$name = $_POST['name'];
+$email = $_POST['email'];
+$priority = $_POST['priority'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
+$formContent = "Name: $name\nPriority: $priority\nMessage:\n\n$message";
+$mailHeader = "From: $email \r\n";
 
-mail($email, $subject, $message, "From: ".$from);
+mail($to, $subject, $formContent, $mailHeader)or die("Error!");
 
-print "Your message has been sent:</br>$email</br>$subject</br>$message";
+echo "Thank you! Your message has been sent." . " -" . "<a href='index.html'> Return Home</a>";
 
 ?>

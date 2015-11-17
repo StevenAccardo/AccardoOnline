@@ -14,6 +14,19 @@ a {
 	text-decoration: none;
 }
 
+a:link, a:visited {
+	color: #ff0000; /* red */
+}
+
+a:hover, a:active {
+	background-color: #ff0000; /* red */
+	color: #FFF; /* White */
+	padding: 2px 4px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
 .mainheader nav {
 	background-color: #696969; /*grey*/
 	height: 40px;
@@ -45,9 +58,9 @@ a {
 }
 
 .mainheader nav ul li a {
-	border-radius: 5px;
-	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 
 h2 {
@@ -55,7 +68,7 @@ h2 {
 	color: #696969;
 }
 
-input, textarea {
+input, textarea, select {
 	padding:10px;
 	border: 1px solid #E5E5E5;
 	width: 200px;
@@ -63,6 +76,15 @@ input, textarea {
 	-webkit-box-shadow: rgba(0,0,0,0.1) 0px 0px 8px;
 	-moz-box-shadow: rgba(0,0,0,0.1) 0px 0px 8px;
 	box-shadow: rgba(0,0,0,0.1) 0px 0px 8px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	
+}
+
+select {
+	width: 220px;
 }
 
 textarea {
@@ -92,6 +114,24 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;
+}
+
+.mainFooter {
+	width: 100%;
+	height: 40px;
+	float: left;
+	background-color: #696969; /*Grey*/
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin: 2% 0;
+	
+}
+	
+.mainFooter p {
+	width: 92%;
+	margin: 10px auto;
+	color: #FFF;
 }
 
 @media only screen and (min-width: 150px) and (max-width: 600px)
