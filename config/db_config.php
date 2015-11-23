@@ -1,4 +1,3 @@
-<!--PHP config file that stores all of the data needed to connect-->
 <?php
 
 	$db_host = "localhost";
