@@ -33,9 +33,7 @@
 	<link rel = "stylesheet" type = "text/css" href = "guestbook.css">
 	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
 </head>
-<style>
 
-</style>
 <body class = "body">
 
 	<header class = "header">
@@ -63,7 +61,7 @@
 	</font>
 </form>
 
-<div>
+<div class = "instructions">
 	<center>
 		<p>The table below will be updated everytime that someone signs the Guestbook. If an e-mail is entered then the names will be highlighted, 
 		and clicking on the hyperlink will launch my e-mail application and create a new message to that individual. If an e-mail was not entered 
@@ -72,7 +70,7 @@
 </div>
 
 
-<table bgcolor="#AAAAAA" border ="0" width="75%" cellspacing="1" cellpadding="2">
+<table class = "table" bgcolor="#AAAAAA" border ="0" width="75%" cellspacing="1" cellpadding="2">
 
 <?php
 //Retrieves stored data, orders it by date, and then stores that into $result

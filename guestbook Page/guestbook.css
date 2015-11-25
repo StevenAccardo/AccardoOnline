@@ -1,4 +1,48 @@
 
 body {
-	
+	background-image: url('../Images/guestbookbg.jpe');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #FFF;
 }
+
+a {
+	text-decoration: none;
+}
+
+a:link, a:hover{
+	color: # FFF;
+}
+
+textarea {
+	padding: 30px;
+	-webkit-border-radius: 80px;
+	-moz-border-radius: 80px;
+	border-radius: 80px;
+}
+
+input {
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	height: 25px;
+	width: 230px;
+}
+
+form {
+	background-color: rgba(255,255,255,0.5);
+	padding: 2% 1%;
+}
+
+.instructions p {
+	color:#000000;
+}
+
+table {
+	color:#000000;
+}
+
+

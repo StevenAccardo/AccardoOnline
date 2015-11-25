@@ -1,14 +1,14 @@
 
 
 body {
-	padding: 50px 100px;
+	padding: 50px 0px;
 	font-size: 100%;
 	font-style: Arial, 'Lucida Sans Unicode';
-	background: #850000; /*Dark Red*/
-	background: -webkit-linear-gradient(to right bottom, #850000, #000000);
-	background: -moz-linear-gradient(to right bottom, #850000, #000000);
-	background: linear-gradient(to right bottom, #850000, #000000);
-	
+	background-image: url('../Images/contactpagebg.jpg');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 a {
@@ -16,24 +16,20 @@ a {
 }
 
 a:link, a:visited {
-	color: #ff0000; /* red */
+	color: #00feff;
 }
 
 a:hover, a:active {
-	background-color: #ff0000; /* red */
+	background-color: #00feff;
 	color: #FFF; /* White */
 	padding: 2px 4px;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
+	
 }
 
 .mainheader nav {
-	background-color: #696969; /*grey*/
+	background-color: rgba(0, 102, 102, 0.4);
 	height: 40px;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
+
 }
 
 .mainheader nav ul{
@@ -42,7 +38,7 @@ a:hover, a:active {
 }
 
 .mainheader nav ul li{
-	float: left;
+	float: right;
 	display: inline;
 }
 
@@ -54,19 +50,15 @@ a:hover, a:active {
 }
 
 .mainheader nav a:hover, .mainheader nav a:active, .mainheader nav .active a:link, .mainheader nav .active a:visited {
-	background-color: #ff0000; /*red*/
+	background-color: #00feff
 	text-shadow: none;
 }
 
-.mainheader nav ul li a {
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-}
+
 
 h2 {
 	margin-bottom: 20px;
-	color: #696969;
+	color: #FFF;
 }
 
 input, textarea, select {
@@ -95,36 +87,39 @@ textarea {
 	line-height: 10px;
 }
 
-input:hover, textarea:hover, input:focus, textarea:focus {
+input:hover, textarea:hover, select:hover, input:focus, textarea:focus, select:focus {
 	border-color: 1px solid #C9C9C9;
-	-webkit-box-shadow: rgba(255,0,0,1.0) 0px 0px 10px;
-	-moz-box-shadow: rgba(255,0,0,1.0) 0px 0px 10px;
-	box-shadow: rgba(255,0,0,1.0) 0px 0px 10px;
+	-webkit-box-shadow: 0px 0px 10px #00feff inset;
+	-moz-box-shadow: 0px 0px 10px #00feff inset;
+	box-shadow: 0px 0px 10px #00feff inset ;
 }
 
 .form label {
 	margin-left: 10px;
-	color: #999999;
+	color: #FFF;
 }
 
 .submit input {
 	width: 100px;
 	height: 40px;
-	background-color: #696969;
+	background-color: #006666;
 	color: #FFF;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;
 }
 
+.mainFooter a:hover, .mainFooter a:active {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
 .mainFooter {
 	width: 100%;
 	height: 40px;
 	float: left;
-	background-color: #696969; /*Grey*/
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
+	background-color: rgba(0, 102, 102, 0.4);
 	margin: 2% 0;
 	
 }
@@ -134,6 +129,8 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 	margin: 10px auto;
 	color: #FFF;
 }
+
+
 
 @media only screen and (min-width: 150px) and (max-width: 600px)
 {

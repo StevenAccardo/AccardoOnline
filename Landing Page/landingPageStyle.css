@@ -3,7 +3,11 @@
 
 
 body {
-	background-image: url('Images/BlueprintBackground.jpg');
+	background-image: url('Images/ocean.jpe');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	color: #000305;
 	font-size: 87.5%; /*Base font size is 14px*/
 	line-height: 1.5;
@@ -46,6 +50,9 @@ a:hover, a:active {
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
 
 .mainheader nav {
