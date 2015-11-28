@@ -13,8 +13,78 @@ a {
 	text-decoration: none;
 }
 
-a:link, a:hover{
-	color: # FFF;
+a:link, a:visited{
+	color: #FFF;
+}
+
+a:hover, a:active {
+	background-color: #FFF;
+	color: #7ba693;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.header nav {
+	
+	height: 3%;
+	width: 10%;
+	float: right;
+
+}
+
+.header nav ul{
+	list-style:none;
+	margin:0;
+	padding: 0;
+}
+
+.header nav ul li{
+	background-color: #7ba693;
+	text-align: center;
+	display: block;
+	border-style: solid;
+	padding: 1%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin: 5px;
+	
+}
+
+.header nav a:link, .header nav a:visited {
+	color: #FFF;
+	
+}
+
+.header nav a:hover, .header nav a:active {
+	background-color: #FFF;
+	color: #7ba693;
+	border-style: solid;
+	width: 10%;
+	border-color: #7ba693;
+	padding: 1%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin: 5px;
+}
+
+.title {
+	background-color: rgba(123,166,147,0.5);
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	padding: 1% 1%;
+	width: 50%;
+}
+
+.languages {
+	background-color: rgba(123,166,147,0.5);
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	width: 50%;
 }
 
 textarea {
@@ -22,6 +92,7 @@ textarea {
 	-webkit-border-radius: 80px;
 	-moz-border-radius: 80px;
 	border-radius: 80px;
+	width: 75%;
 }
 
 input {
@@ -30,19 +101,49 @@ input {
 	border-radius: 30px;
 	height: 25px;
 	width: 230px;
+	padding: 0px 1%;
+}
+label {
+	color: #000000;
 }
 
 form {
 	background-color: rgba(255,255,255,0.5);
 	padding: 2% 1%;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	width: 75%;
 }
 
 .instructions p {
-	color:#000000;
+	color:#FFF;
+	background-color: rgba(123,166,147,0.5);
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	padding: 1% 1%;
+	width: 50%;
+}
+
+.submit input {
+	height: 35px;
+	width: 110px;
 }
 
 table {
 	color:#000000;
+	border: 0; 
+	width: 75%;
 }
 
 
+
+.mainfooter {
+	background-color: #7ba693;
+	width: 20%;
+	padding: 0px 1px 0px 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}

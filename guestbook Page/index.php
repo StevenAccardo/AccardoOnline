@@ -34,7 +34,7 @@
 	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
 </head>
 
-<body class = "body">
+<body>
 
 	<header class = "header">
 		<nav>
@@ -45,22 +45,26 @@
 			</ul>
 		</nav>
 		<center>
-		<h2>This guestbook page is not complete yet, and is more than likely being worked on as you view it. However, the Guestbook functionality 
+		<h2 class = "title">This guestbook page is not complete yet, and is more than likely being worked on as you view it. However, the Guestbook functionality 
 		is working. So please, leave a comment or your name to let me know that you were here!</h2>
-		<p>This Guestbook was created using HTML5, CSS3, PHP, and SQL.</p>
+		<p class = "languages">This Guestbook was created using HTML5, CSS3, PHP, and SQL.</p>
 		</center>
 	</header>
 <center>
 <form action = "<?php echo $_SERVER["PHP_SELF"]; ?>" method="POST"> <!--Returns back to the original page after clicking the submit button, instead of loading the .php script -->
-	<font face="arial" size="1">
-		Name: <input type="text" name="txt_name">&nbsp;
-		Email: <input type="text" name="txt_email"><br><br>
-		Comment: <br>
-		<textarea style="width:75%" rows="10" name="txt_comment"></textarea>
-		<center><input type="submit" name = "submit" value="Submit"></center>
-	</font>
+	<label for="txt_name">Name: </label>
+	<input type="text" name="txt_name" placeholder = "John Doe">
+	<label for="txt-email">Email: </label>
+	<input type="text" name="txt_email" placeholder = "name@email.com"><br><br>
+	<label for="txt-email">Comment: </label><br>
+	<textarea rows="10" name="txt_comment" placeholder = "Type here..."></textarea><br><br>
+	<center>
+		<p class = "submit">
+			<input type="submit" name = "submit" value="Submit">
+		</p>
+	</center>
+	
 </form>
-
 <div class = "instructions">
 	<center>
 		<p>The table below will be updated everytime that someone signs the Guestbook. If an e-mail is entered then the names will be highlighted, 
@@ -70,7 +74,7 @@
 </div>
 
 
-<table class = "table" bgcolor="#AAAAAA" border ="0" width="75%" cellspacing="1" cellpadding="2">
+<table class = "table" cellspacing="1" cellpadding="2">
 
 <?php
 //Retrieves stored data, orders it by date, and then stores that into $result
@@ -132,4 +136,7 @@ for ($i=0; $i < mysql_num_rows($result); $i++)
 
 </center>
 </body>
+<footer class ="mainfooter">
+	<p>Copyright &copy; 2015 <a href = "www.StevenACcardo.com" title ="website1">www.StevenAccardo.com</a></p>
+</footer>
 </html>
