@@ -4,7 +4,17 @@
 	$connection = mysql_connect($db_host, $db_user, $db_password)or die("Error Connecting to Database");
 	mysql_select_db($db_name, $connection) or die("Did not select correct database.");
 	
-	/*Stops PHP from throwing an E_notice when it comes accros a variable that hasn't been initilaized. Pretty much, it won't look at this code 
+	//Selects two columns from table and stores them in individual arrays
+	$query1 = "SELECT name, comment FROM guestbook";
+	$result = mysql_query ($query1, $connection) or die(mysql_error());
+	while ($row = mysql_fetch_array($result)) 
+	{
+    $namecheck = $row['name'];//stores the array of current names in the table
+    $commentcheck = $row['comment'];//stores the array of current comments in the table
+	}
+
+	
+	/*Stops PHP from throwing an E_notice when it comes across a variable that hasn't been initilaized. Pretty much, it won't look at this code 
 	until the user clicks the submit button. Before the submit button is clicked, the variable isn't initialized and PHP throws the notice.*/
 	if (isset($_POST['submit']))
 	{
@@ -18,9 +28,9 @@
 			$comment = $_POST["txt_comment"];
 			$date = time(); //Returns the current time, measured in seconds since the Unix Epoch
 		
-			//Stores MySQL command into variable and then creates the query or throws an error i fquery requet was unsuccesful
-			$query = "INSERT INTO guestbook (primaryid, name, email, comment, date_auto) VALUES (NULL, '$name', '$email', '$comment', '$date')";
-			mysql_query ($query, $connection) or die(mysql_error());
+			//Stores MySQL command into variable and then creates the query or throws an error if query requet was unsuccesful
+			$query2 = "INSERT INTO guestbook (primaryid, name, email, comment, date_auto) VALUES (NULL, '$name', '$email', '$comment', '$date')";
+			mysql_query ($query2, $connection) or die(mysql_error());
 		}
 	}
 ?>

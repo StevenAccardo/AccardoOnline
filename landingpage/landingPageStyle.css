@@ -43,16 +43,13 @@ a:hover, a:active {
 	clear: both;
 }
 
-.mainheader img {
+#image {
 	width:30%;
 	height: auto;
 	margin: 2% 0;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	-webkit-transform: rotateY(180deg);
-	-moz-transform: rotateY(180deg);
-	transform: rotateY(180deg);
 }
 
 .mainheader nav {
@@ -204,7 +201,7 @@ a:hover, a:active {
 	
 	}
 	
-	.mainheader img {
+	#image {
 		width:100%;
 
 	}
