@@ -1,95 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang = "en">
 <head>
-	<title>.:: Online Examples ::.</title>
-	<meta charset="utf-8"/>
-	<link rel = "stylesheet" type = "text/css" href = "landingPageStyle.css"/>
-	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+	<title>Steve's Portfolio</title>
+	<meta name = "description" content = "A portfolio to showcase my web-based projects, examples, collaborations, and more!"/>
+    <link rel = "stylesheet" type="text/css" href="landingpage.css"
+	<meta charset = "utf-8"/>
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="landingpage.js"></script>
 </head>
-	
-<body class="body">
-	
+<body>
 	<header class="mainheader">
-		<img src="Images/applyonline.png" id = "image" onmouseover = "newPicture()" onmouseout = "oldPicture()">
-		
-		<nav><ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="/guestbook">Guestbook</a></li>
+		<a id="maintitle" href="#">Steve's Portfolio</a>
+		<nav><ul class="parent">
 			<li><a href="/contact">Contact</a></li>
+            <li><a href="/guestbook">Guestbook</a></li>
+            <li>Web Page Designs
+                <ul class="child">
+                    <li><a href="/webpagedesigns/firststeps">First Steps</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Home</a></li>
 		</ul></nav>
 	</header>
 	
-	<div class="mainContent">
-		<div class="content">
-			<article class="topcontent">
-				<header>
-					<h2>About</h2>			
-				</header>
-			
-				<footer>
-					<p class="post-info">This post is written by Steve</p>
-				</footer>
-				
-				<content>
-					<h4>All of the completed pages on the site are responsive and can be viewed on various devices. If a site is not responsive, 
-					then it is actively being worked on.</h4>
-					<p>This is my second website. I created it to showcase my web and server side skills. Every part of this website has been 
-					coded from scratch without prexisting framework. This site will eventually contain a collection of web apps, website templates, 
-					and stand alone widgets that will portray the breadth and depth of my abilities. Due to this, there will be a lot of filler text 
-					throughout. Also, the site will change themes from page to page so that I can show my ability to tailor and manipulate code to 
-					produce various visual effects and structure changes. You can right click on the site and select "View Page Source" at any time to 
-					view my scripts.</p>
-					<p>This site contains examples of HTML5, CSS3, PHP, SQL.</p>
-				</content>
-			</article>
-			
-			<article class="bottomcontent">
-				<header>
-					<h2>Thank You</h2>			
-				</header>
-				
-				<footer>
-					<p class="post-info">This post is written by Steve</p>
-				</footer>
-				
-				<content>
-					<p>Thank you for taking the time to come and look at my site and my projects.</p>
-					<p>Please use the navigation bar above to search through some of my work.</p>
-				</content>
-			</article>
-		</div>
-	
+    <div id="backgroundImage"></div>
+    <div id="text">
+	<h1 id="first">WHEN DEPENDABILITY, TRUST, AND RESULTS ARE IMPORTANT.</h1>
+	<h1 id="second">LOOK TO ME.</h1>
+	<p>This entire portfolio has been hand-coded without using any WYSIWYG editors, or website builders. Some of the pages are 
+	responsive, while some pages' responsive designs are still in queue.</p>
+	<p>All of the pages in this portfolio are continuosly being modified, and may be under construction when you view them. So if it doesn't look 
+	right, or something is buggy, then it is more than likely on my To-Do list. This portfolio will eventually contain a collection of projects, 
+	web apps, and web templates. Also, the site will change themes from page to page so that I can show my ability to tailor and manipulate code to 
+	produce various visual effects and structure changes.</p>
 	</div>
-		
-	<aside class="top-sidebar">
-		<article>
-			<h2><a href="http://www.StevenAccardo.com">Visit My Other Website</a></h2>
-			<p>The link above will take you to my main website. It contains my programming portfolio including links to my other non web-based 
+	
+    <div id="bottomselections">
+	   <div id="aboutme" class="column">
+			<div id="heading1">
+				<h2 id="title1"><img id="smile" src="/Images/smileyface.png" alt="smiley face"></img><a href="http://stevenaccardo.com">About Me</a></h2>
+			</div>
+            <p>This link will take you to my main website. It contains more information on my background, including links to my other non web-based 
 			programming projects and collaborations.</p>
-		</article>
-	</aside>
-	
-	<aside class="middle-sidebar">
-		<article>
-			<h2><a href="https://github.com/CaliKane">Visit My GitHub</a></h2>
-			<p>The link above will take you to my GitHub account. You will also be able to view all of my projects and collaborations from there.</p>
-		</article>
-	</aside>
-	
-	<aside class="bottom-sidebar">
-		<article>
-			<h2>Bottom Sidebar</h2>
-			<p>This contains some random text until I figure out a use for the space.</p>
-		</article>
-	</aside>
-	
-	<footer class = "mainFooter">
+			<input type="button" onclick="location.href='http://stevenaccardo.com'" value="Get to Know Me!"/>
+	   </div>
+	   <div id="webmaster" class="column">
+			<div id="heading2">
+				<h2 id ="title2"><img id="computer" src="/Images/computer.png" alt="computer"></img><a href="http://jointheleague.org">Webmaster</a></h2>
+			</div>
+				<p>I have recently been appointed as the Webmaster for The League of Amazing Programmers, a 501(c)(3) non-profit programming school 
+				for children and teenagers.</p>
+				<input type="button" onclick="location.href='http://jointheleague.org'" value="Have a look!"/>
+	   </div>
+	   <div id="github"class="column">
+			<div id="heading3">
+				<h2 id ="title3"><img id="githubicon" src="/Images/github.png" alt="github"></img><a href="https://github.com/StevenAccardo">GitHub</a></h2>
+			</div>
+		  <p>Have a look at my GitHub account. You will also be able to view all of my projects and collaborations from there.</p>
+		  <input type="button" onclick="location.href='https://github.com/StevenAccardo'" value="Check out my code!"/>
+	   </div>
+    </div>
+        
+    <div id="bottom"></div>
+	<footer id = "mainfooter">
 		<p>Copyright &copy; 2015 <a href="http://www.StevenAccardo.com" title ="website1">www.StevenAccardo.com</a></p>
 	</footer>
-	
-	
-	<script src = landingPageJS.js></script>
-	
 </body>
- </html>
+</html>

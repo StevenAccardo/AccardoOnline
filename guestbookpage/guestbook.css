@@ -23,6 +23,7 @@ a:hover, a:active {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+	padding: 0px 5px;
 }
 
 .header nav {
@@ -131,13 +132,20 @@ form {
 	width: 110px;
 }
 
-table {
+.table {
 	color:#000000;
 	border: 0; 
 	width: 75%;
 }
 
+.table a:link {
+	color: #7ba693;
+}
 
+.table a:hover, .table a:active {
+	color: #FFF;
+	background-color:#7ba693;
+}
 
 .mainfooter {
 	background-color: #7ba693;

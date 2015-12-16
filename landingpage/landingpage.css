@@ -1,0 +1,163 @@
+body {
+	margin: 0px;
+	font-family: proxima-nova-n6,proxima-nova,sans-serif;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+p {
+	font-weight: lighter;
+}
+.mainheader {
+    height:90px;
+    background-color: #222;
+}
+
+.mainheader a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.mainheader #maintitle {
+	font-size: 36px;
+	font-weight: 700;
+	padding: 50px;
+}
+
+ ul.parent {
+    list-style: none;
+    margin-right: 10%;
+	font-size: 20px;
+	font-weight: 700;
+	box-sizing: border-box;
+	width: 55%;
+	float:right;
+
+}
+
+ul.parent > li {
+    float: right;
+    display: inline;
+    margin-left: 5%;
+	padding: 0 30px;
+	color: #FFF;
+	background-color:#222;
+	
+	
+}
+
+ul.child {
+    display: none;
+	width: 100%!important;
+	margin: 10px 0 20px 0;
+	height: 20px;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+#backgroundImage {
+    height: 345px;
+    background-image: url('../Images/water.jpg');
+    background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+	margin-bottom: 5%;
+}
+
+#text {
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 5%;
+}
+#text h1 {
+	font-weight: 600;
+}
+
+#first {
+	color: #357ad9;
+}
+
+#second {
+	color: #2da1dc;
+}
+
+#bottomselections {
+	margin-left: 10%;
+	margin-right: 10%;
+	display: table;
+	
+}
+
+#bottomselections h2 {
+	color: #357ad9;
+	text-align: center;
+}
+
+#bottomselections a {
+	color: #357ad9;
+	text-decoration: none;
+}
+
+
+
+
+#aboutme {
+    width: 33%;
+	padding-right: 6%;
+	
+}
+
+#webmaster {
+    width: 33%;
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
+#github {
+    width: 33%;
+	padding-left: 6%;
+}
+
+.column {
+	display: table-cell;
+}
+
+input {
+	height:60px;
+	width: 250px;
+	color: #FFF;
+	background-color: #357ad9;
+	font-size: 16px;
+	text-transform:uppercase;
+}
+
+#bottom {
+	margin-top: 4%;
+    background-color: #222;
+	height: 300px;
+}
+
+#mainfooter {
+	height: 100px;
+	background-color:#BCBEC0;
+	overflow: hidden;
+}
+
+#mainfooter a {
+	text-decoration: none;
+	color: #FFF;
+	padding: 0 10px;
+}
+
+#mainfooter a:hover, a:active {
+	background-color: #357ad9;
+}
+
+#mainfooter p {
+	padding-top: 40px;
+	padding-left: 25px;
+}
+
