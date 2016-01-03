@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title></title>
+	<title>Place Title Here</title>
 	<meta charset = "utf-8"/>
 	<link rel = "stylesheet" type = "text/css" href = "myStyle.css"/>
 	<meta name = "viewport" content = "width = device - width, initial-scale = 1.0"/>
@@ -12,7 +12,14 @@
 <body>
 
 
+	<!--Loading the scripts at the bottom, so the page will without waiting for the scripts to load-->
+	<!--Load JQuery from the CDN first-->
+	<!--Loading the production version-->
+	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 
-
+	<!--If CDN fails to load, serve up the local version-->
+	<script>window.jQuery || document.write('<script src="js/jquery-2.1.4.js"><\/script>');</script>
+	<!--The JS file that I create, which holds my JQuery code-->
+	<script src="js/script.js></script>"
 </body>
 </html>

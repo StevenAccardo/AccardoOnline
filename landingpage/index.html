@@ -2,29 +2,47 @@
 <html lang = "en">
 <head>
 	<title>Steve's Portfolio</title>
-	<meta name = "description" content = "A portfolio to showcase my web-based projects, examples, collaborations, and more!"/>
-    <link rel = "stylesheet" type="text/css" href="landingpage.css"
-	<meta charset = "utf-8"/>
+	<meta name = "description" content = "A portfolio to showcase my web-based projects, examples, collaborations, and more!">
+	<meta charset = "utf-8">
 	<meta name = "viewport" content = "width=device-width, initial-scale=1.0"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	<link rel = "stylesheet" type="text/css" href="landingpage.css">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	<script src="landingpage.js"></script>
 </head>
 <body>
-	<header class="mainheader">
-		<a id="maintitle" href="#">Steve's Portfolio</a>
-		<nav><ul class="parent">
-			<li><a href="/contact">Contact</a></li>
-            <li><a href="/guestbook">Guestbook</a></li>
-            <li>Web Page Designs
-                <ul class="child">
-                    <li><a href="/webpagedesigns/firststeps">First Steps</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Home</a></li>
-		</ul></nav>
-	</header>
+	<nav id="navbarheader" class="navbar navbar-inverse">
+		<div class="container-fluid">
+		
+			<!--Logo-->
+			<div id="logo" class="navbar-header">
+				<a href="#" class="navbar-brand">Steve's Portfolio</a>
+			</div>
+			
+			<!--menu-->
+			<div>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="#">Home</a></li>
+					<!--Drop Down Menu-->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Webpage Designs <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="/webpagedesigns/firststeps">First Steps</a></li>
+						</ul>
+					</li>
+					<li><a href="/guestbook">Guestbook</a></li>
+					<li><a href="/contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 	
-    <div id="backgroundImage"></div>
+    <div id="backgroundImage" class="img-responsive"></div>
     <div id="text">
 	<h1 id="first">WHEN DEPENDABILITY, TRUST, AND RESULTS ARE IMPORTANT.</h1>
 	<h1 id="second">LOOK TO ME.</h1>
@@ -36,8 +54,8 @@
 	produce various visual effects and structure changes.</p>
 	</div>
 	
-    <div id="bottomselections">
-	   <div id="aboutme" class="column">
+    <div id="bottomselections" class="row">
+	   <div id="aboutme" class="col-md-4">
 			<div id="heading1">
 				<h2 id="title1"><img id="smile" src="/Images/smileyface.png" alt="smiley face"></img><a href="http://stevenaccardo.com">About Me</a></h2>
 			</div>
@@ -45,7 +63,7 @@
 			programming projects and collaborations.</p>
 			<input type="button" onclick="location.href='http://stevenaccardo.com'" value="Get to Know Me!"/>
 	   </div>
-	   <div id="webmaster" class="column">
+	   <div id="webmaster" class="col-md-4">
 			<div id="heading2">
 				<h2 id ="title2"><img id="computer" src="/Images/computer.png" alt="computer"></img><a href="http://jointheleague.org">Webmaster</a></h2>
 			</div>
@@ -53,12 +71,12 @@
 				for children and teenagers.</p>
 				<input type="button" onclick="location.href='http://jointheleague.org'" value="Have a look!"/>
 	   </div>
-	   <div id="github"class="column">
+	   <div id="github"class="col-md-4">
 			<div id="heading3">
 				<h2 id ="title3"><img id="githubicon" src="/Images/github.png" alt="github"></img><a href="https://github.com/StevenAccardo">GitHub</a></h2>
 			</div>
-		  <p>Have a look at my GitHub account. You will also be able to view all of my projects and collaborations from there.</p>
-		  <input type="button" onclick="location.href='https://github.com/StevenAccardo'" value="Check out my code!"/>
+			<p>Have a look at my GitHub account. You will also be able to view all of my projects and collaborations from there.</p>
+			<input type="button" onclick="location.href='https://github.com/StevenAccardo'" value="Check out my code!"/>
 	   </div>
     </div>
         

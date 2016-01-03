@@ -19,7 +19,7 @@
 </head>
 
 <?php
-//Connects to the server and database using a stored config file; NOTE that new versions of PHP use mysqli to handle this operation and more
+	//Connects to the server and database using a stored config file; NOTE that new versions of PHP use mysqli to handle this operation and more
 	require ($_SERVER["DOCUMENT_ROOT"]."/config/db_config.php");
 	$connection = mysql_connect($db_host, $db_user, $db_password)or die("Error Connecting to Database");
 	mysql_select_db($db_name, $connection) or die("Did not select correct database.");
@@ -133,7 +133,7 @@ for ($i=0; $i < mysql_num_rows($result); $i++)
 	//echos the table elements, makes the right cell as little as possible and the left cell as large as possible
 	echo '
 		<tr> 
-			<td width="100%" bgcolor="'.$bg_color.'">
+			<td id="comments" width="100%" bgcolor="'.$bg_color.'">
 				<font face="arial" size = "2">';
 					if ($email_len > 0)
 					{
@@ -148,7 +148,7 @@ for ($i=0; $i < mysql_num_rows($result); $i++)
 					<b>Comment:</b> '.$comment.'
 				</font>
 			</td>
-			<td width="1%" valign="top" nowrap bgcolor="'.$bg_color.'">
+			<td id="datetime" width="1%" valign="top" nowrap bgcolor="'.$bg_color.'">
 				<font face="arial" size="2">
 					<b>Date:</b> '.$show_date.'
 				</font>
@@ -166,6 +166,6 @@ for ($i=0; $i < mysql_num_rows($result); $i++)
 
 </body>
 <footer class ="mainfooter">
-	<p>Copyright &copy; 2015 <a href = "www.StevenACcardo.com" title ="website1">www.StevenAccardo.com</a></p>
+	<p>Copyright &copy; 2015 <a href = "www.StevenAccardo.com" title ="website1">www.StevenAccardo.com</a></p>
 </footer>
 </html>

@@ -1,7 +1,4 @@
 
-
-
-
 body {
 	background-image: url('../../Images/ocean.jpe');
 	-webkit-background-size: cover;
@@ -128,7 +125,6 @@ a:hover, a:active {
 	-webkit-border-radius: 5px;
 	padding: 3% 5%;
 	margin-top: 2%;
-	height: 210px;
 }
 
 .top-sidebar {
@@ -208,7 +204,7 @@ a:hover, a:active {
 	
 	.mainheader nav {
 		
-		height: 160px;
+		height: 120px;
 	}
 
 	.mainheader nav ul{
@@ -251,6 +247,13 @@ a:hover, a:active {
 		width: 94%;
 		margin: 2% 0 2% 0;
 		padding: 2% 3%;
+	}
+	
+	.mainFooter p {
+		width: 100%;
+		padding: 0% 0% 4% 3%;
+		color: #FFF;
+		font-size: 90%;
 	}
 }
 

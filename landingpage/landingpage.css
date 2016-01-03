@@ -9,51 +9,16 @@ body {
 p {
 	font-weight: lighter;
 }
-.mainheader {
-    height:90px;
-    background-color: #222;
+
+#navbarheader {
+	margin: 0px;
+	border-radius: 0px;
 }
 
-.mainheader a {
-    text-decoration: none;
-    color: #FFF;
-}
-
-.mainheader #maintitle {
-	font-size: 36px;
+#logo {
+	font-size: 36px;/*Not Working due to Botstrap*/
 	font-weight: 700;
-	padding: 50px;
-}
-
- ul.parent {
-    list-style: none;
-    margin-right: 10%;
-	font-size: 20px;
-	font-weight: 700;
-	box-sizing: border-box;
-	width: 55%;
-	float:right;
-
-}
-
-ul.parent > li {
-    float: right;
-    display: inline;
-    margin-left: 5%;
-	padding: 0 30px;
-	color: #FFF;
-	background-color:#222;
-	
-	
-}
-
-ul.child {
-    display: none;
-	width: 100%!important;
-	margin: 10px 0 20px 0;
-	height: 20px;
-	list-style: none;
-	box-sizing: border-box;
+	padding-left: 100px;
 }
 
 #backgroundImage {
@@ -101,13 +66,9 @@ ul.child {
 	text-decoration: none;
 }
 
-
-
-
 #aboutme {
     width: 33%;
 	padding-right: 6%;
-	
 }
 
 #webmaster {
@@ -119,10 +80,6 @@ ul.child {
 #github {
     width: 33%;
 	padding-left: 6%;
-}
-
-.column {
-	display: table-cell;
 }
 
 input {
@@ -137,11 +94,11 @@ input {
 #bottom {
 	margin-top: 4%;
     background-color: #222;
-	height: 300px;
+	height: 100px;
 }
 
 #mainfooter {
-	height: 100px;
+	height: 70px;
 	background-color:#BCBEC0;
 	overflow: hidden;
 }
@@ -157,7 +114,64 @@ input {
 }
 
 #mainfooter p {
-	padding-top: 40px;
+	padding-top: 25px;
 	padding-left: 25px;
 }
 
+@media only screen and (min-width: 150px) and (max-width: 600px)
+{
+
+#logo {
+	padding-left: 0px;
+}	
+	
+#backgroundImage {
+	height: 100px;
+}
+
+h1 {
+	font-size: 20px;
+	font-weight: 400;
+}	
+
+#bottomselections p {
+	font-size: 12px;
+	line-height: 10px;
+}
+
+#aboutme {
+    width: 100%;
+	padding-right: 0%;
+	padding-left: 0%;
+	
+}
+
+#webmaster {
+    width: 100%;
+	padding-left: 0%;
+	padding-right: 0%;
+}
+
+#github {
+    width: 100%;
+	padding-left: 0%;
+}
+
+#bottom {
+	height: 50px;
+}
+
+#mainfooter {
+	height: 40px;
+}
+
+#mainfooter p {
+	padding-top: 2%;
+	padding-left: 1%;
+	font-size: 12px;
+}
+
+
+
+
+}
