@@ -5,7 +5,16 @@
 	<meta name = "description" content = "A portfolio to showcase my web-based projects, examples, collaborations, and more!">
 	<meta charset = "utf-8">
 	<meta name = "viewport" content = "width=device-width, initial-scale=1.0"/>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	
+	<!--Loading the scripts at the bottom, so the page will without waiting for the scripts to load-->
+	<!--Load JQuery from the CDN first-->
+	<!--Loading the production version-->
+	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<!--If CDN fails to load, serve up the local version-->
+	<script>window.jQuery || document.write('<script src="js/jquery-2.1.4.min.js"><\/script>');</script>
+	<!--The JS file that I create, which holds my JQuery code-->
+	<script src="landingpage.js"></script>
+	
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<!-- Optional theme -->
@@ -46,8 +55,7 @@
     <div id="text">
 	<h1 id="first">WHEN DEPENDABILITY, TRUST, AND RESULTS ARE IMPORTANT.</h1>
 	<h1 id="second">LOOK TO ME.</h1>
-	<p>This entire portfolio has been hand-coded without using any WYSIWYG editors, or website builders. Some of the pages are 
-	responsive, while some pages' responsive designs are still in queue.</p>
+	<p>This entire portfolio has been hand-coded without using any WYSIWYG editors, or website builders. All of the pages are responsive.</p>
 	<p>All of the pages in this portfolio are continuosly being modified, and may be under construction when you view them. So if it doesn't look 
 	right, or something is buggy, then it is more than likely on my To-Do list. This portfolio will eventually contain a collection of projects, 
 	web apps, and web templates. Also, the site will change themes from page to page so that I can show my ability to tailor and manipulate code to 
@@ -84,5 +92,7 @@
 	<footer id = "mainfooter">
 		<p>Copyright &copy; 2015 <a href="http://www.StevenAccardo.com" title ="website1">www.StevenAccardo.com</a></p>
 	</footer>
+
+
 </body>
 </html>
