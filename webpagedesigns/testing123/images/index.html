@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <meta charset = "utf-8"/>
+        <meta name = "viewport" content = "width = device - width, initial-scale = 1.0"/>
+        <link rel = "stylesheet" type = "text/css" href = "style.css"/>
+    </head>
+    <body>
+        <img id="banner"src="Images/banner.jpg"></img>
+        <div id="container">
+            <section id="topsection">
+
+                <div id="toptext">
+                    <h1>In Gravida Libero</h1>
+                    <p class="headp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer enim neque, molestie ut placerat id, tincidunt in sem. Pellentesque sodales lobortis eros nec pulvinar. In ac ultrices ipsum, ultricies semper nisi. Morbi ac hendrerit nulla. Sed nec ex commodo, tincidunt felis ac, iaculis ipsum.</p>
+                    <p class="headp">Morbi ac hendrerit nulla. Sed nec ex commodo, tincidunt felis ac, iaculis ipsum</p>
+                </div>
+
+                <div id="findercontainer">
+                    <h2 id="finder">State Finder</h2>
+                    <p id="findertext">Morbi ac hendrerit nulla. Sed nec ex commodo</p> <!--This wasn't included in the original file. I added it, to match the final images.-->
+                    <form>
+                        
+                        <select id="states" multiple="multiple" size="10">
+                            <option value="">Select State</option>
+                            <option value="Alabama">Alabama</option>
+                            <option value="Alaska">Alaska</option>
+                            <option value="Arizona">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="DC">District Of Columbia</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="ID">Idaho</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IN">Indiana</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="ME">Maine</option>
+                            <option value="MD">Maryland</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MI">Michigan</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MO">Missouri</option>
+                            <option value="MT">Montana</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NV">Nevada</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="NY">New York</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="OH">Ohio</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="OR">Oregon</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="TX">Texas</option>
+                            <option value="UT">Utah</option>
+                            <option value="VT">Vermont</option>
+                            <option value="VA">Virginia</option>
+                            <option value="WA">Washington</option>
+                            <option value="WV">West Virginia</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                        <input type="text" id="search" onkeyup="searchstate()"placeholder="Search Hotels"><img src="Images/search.png"></img>
+                        <!--<button type="submit">Submit</button>-->
+                    </form>
+                </div>
+            </section>
+
+            <div id="innercontainertop">
+                <h2>In gravida</h2>
+                <div id="toprow">
+                    <div class="rows firstrows">
+                        <h3>Cras ac mauris</h3>
+                        <p>nteger dictum hendrerit pharetra. Cras fermentum posuere egestas.</p>
+                        <a>Learn More &nbsp&nbsp&gt</a>
+                    </div>
+                    <div class="rows">
+                        <h3>Curabitur elementum</h3>
+                        <p>Cras vel imperdiet mauris. Pellentesque libero mauris, interdum a felis et, condimentum mattis erat.</p>
+                        <a>Learn More &nbsp&nbsp&gt</a>
+                    </div>
+                    <div class="rows">
+                        <h3>Awards and Recognitions</h3>
+                        <p>Aliquam eget ligula mauris. Etiam viverra non turpis eu auctor. Nullam pretium est libero, et condimentum massa egestas id. </p>
+                        <a>Learn More &nbsp&nbsp&gt</a>
+                    </div>
+                </div>
+
+                <div id="botrow">
+                    <div class="rows firstrows">
+                        <h3>Morbi placerat </h3>
+                        <p> Nam feugiat ultrices ligula eget faucibus. Mauris convallis ipsum est.</p>
+                        <a>Learn More &nbsp&nbsp&gt</a>
+                    </div>
+                    <div class="rows">
+                        <h3>Suspendisse eu</h3>
+                        <p>Duis pretium elementum dui, id feugiat neque facilisis vel.</p>
+                        <a>Learn More &nbsp&nbsp&gt</a>
+                    </div>
+                    <div class="rows">
+                        <h3> Integer faucibus</h3>
+                        <p> Vivamus at rutrum est, eu pellentesque lacus. Curabitur imperdiet tortor sit amet enim ullamcorper, a aliquet odio rutrum.</p>
+                        <a>Learn More &nbsp&nbsp&gt</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="innercontainerbot">
+                <div id="productstop">
+                    <h2 id="productstitle">Products</h2>
+                    <div id="filter">
+                        Fitler by
+                        <select>
+                            <option>All</option>
+                            <option>Less Than $500</option>
+                            <option>From $500 to $1000</option>
+                            <option>From $1000 to $2000</option>
+                            <option>$2000 or more</option>
+                        </select>
+                    </div>
+                </div>
+                <ul>
+                    <li id="cereal">
+                        <p class="product">Product Title 1 </p>
+                        <p class="price">Staring at $500 </p>
+                        <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <img src="Images/cereal_b.jpg"></img>
+                        <a>Learn More &gt</a>
+                    </li>
+                    <li id="flower">
+                        <p class="product">Product Title 2</p>
+                        <p class="price">Staring at 1900</p>
+                        <p class="details">Donec ornare magna sit amet erat molestie sollicitudin ac vitae lectus.</p>
+                        <img src="Images/flower_b.jpg"></img>
+                        <a>Learn More &gt</a>
+                    </li>
+                    <li id="machine">
+                        <p class="product">Product Title 3</p>
+                        <p class="price">Staring at 1900</p>
+                        <p class="details">Cras non metus sed odio tristique imperdiet.</p>
+                        <img src="Images/machine_b.jpg"></img>
+                        <a>Learn More &gt</a>
+                    </li>
+                    <li id="candy">
+                        <p class="product">Product Title 4</p>
+                        <p class="price">Staring at 1900</p>
+                        <p class="details">Pellentesque mattis tellus ut molestie dapibus.</p>
+                        <img src="Images/candy_b.jpg"></img>
+                        <a>Learn More &gt</a>
+                    </li>
+                </ul>
+                <!--
+                <script>
+                    function searchstate(){
+
+                        var searchvalue = document.getElementById('search').value;
+                        var from_select = document.getElementById('states');
+                        for (var i=0; i<from_select.options.length-1; i++) {
+                            var st=from_select.options[i].text;
+                            if(st.search(searchvalue)>-1) {
+                                var temp = from_select.options[i];
+                                from_select.add(temp, from_select.options[0]);
+                            }
+                        }
+                    }
+                </script>
+
+                <script type="text/javascript">
+                window.products = {
+                1: {
+                    id : 1,
+                    order: 1,
+                    'title' : 'Product Title 1',
+                    'price' : 'Staring at $500',
+                    'desc' : 'Cras a ante eget dui dignissim molestie nec non lectus. Donec id sapien tristique, iaculis odio a, gravida ligula. In hac habitasse platea dictumst. Praesent non lacus elit. Sed convallis erat sem, ac egestas ipsum tempor in. Sed consectetur ex at dolor ullamcorper vulputate. Ut tristique ipsum velit, eget pretium ipsum dictum vel. Aenean ut tempus elit, non facilisis odio. Vivamus hendrerit ipsum vel risus ultrices, ut ornare metus ornare. Quisque semper ante ac pellentesque vestibulum. Cras a massa turpis. Pellentesque congue leo velit, non porta dui euismod nec.<br> <br> Mauris sed enim risus. Quisque mollis justo quis commodo euismod. Nullam non massa in lorem cursus sagittis. Sed laoreet felis mauris, a eleifend sapien molestie eget. Duis at volutpat elit. Phasellus sit amet erat ut libero lobortis sollicitudin pellentesque ac lectus. Phasellus venenatis ultrices justo nec venenatis.<br><br>'
+                        +'<ul>'
+                                + '     <li>Non porta dui euismod nec</li>'
+                                + '     <li>Ut tristique ipsum velit</li>'
+                                                + '     <li>Quisque mollis justo</li>'
+                        +'</ul>',
+                    'uri-stub'   : '/buy-mattress/iseries/iseries-hybrid/iseries-approval-super-pillow-top',
+                                    'src'        : 'material/000010885.jpg'
+                },
+                2: {
+                    id : 2,
+                    order: 2,
+                    'title' : 'Product Title 2',
+                    'price' : 'Staring at $1900',
+                    'desc' : 'Cras a ante eget dui dignissim molestie nec non lectus. Donec id sapien tristique, iaculis odio a, gravida ligula. In hac habitasse platea dictumst. Praesent non lacus elit. Sed convallis erat sem, ac egestas ipsum tempor in. Sed consectetur ex at dolor ullamcorper vulputate. Ut tristique ipsum velit, eget pretium ipsum dictum vel. Aenean ut tempus elit, non facilisis odio. Vivamus hendrerit ipsum vel risus ultrices, ut ornare metus ornare. Quisque semper ante ac pellentesque vestibulum. Cras a massa turpis. Pellentesque congue leo velit, non porta dui euismod nec.<br> <br> Mauris sed enim risus. Quisque mollis justo quis commodo euismod. Nullam non massa in lorem cursus sagittis. Sed laoreet felis mauris, a eleifend sapien molestie eget. Duis at volutpat elit. Phasellus sit amet erat ut libero lobortis sollicitudin pellentesque ac lectus. Phasellus venenatis ultrices justo nec venenatis.',
+                    'uri-stub'   : '/buy-mattress/iseries/iseries-hybrid/iseries-approval-super-pillow-top',
+                                    'src'        : 'material/ff_x20_008.JPG'
+                },
+                3: {
+                    id : 3,
+                    order: 3,
+                    'title' : 'Product Title 3',
+                    'price' : 'Staring at $2730',
+                    'desc' : 'Cras a ante eget dui dignissim molestie nec non lectus. Donec id sapien tristique, iaculis odio a, gravida ligula. In hac habitasse platea dictumst. Praesent non lacus elit. Sed convallis erat sem, ac egestas ipsum tempor in. Sed consectetur ex at dolor ullamcorper vulputate. Ut tristique ipsum velit, eget pretium ipsum dictum vel. Aenean ut tempus elit, non facilisis odio. Vivamus hendrerit ipsum vel risus ultrices, ut ornare metus ornare. Quisque semper ante ac pellentesque vestibulum. Cras a massa turpis. Pellentesque congue leo velit, non porta dui euismod nec.<br> <br> Mauris sed enim risus. Quisque mollis justo quis commodo euismod. Nullam non massa in lorem cursus sagittis. Sed laoreet felis mauris, a eleifend sapien molestie eget. Duis at volutpat elit. Phasellus sit amet erat ut libero lobortis sollicitudin pellentesque ac lectus. Phasellus venenatis ultrices justo nec venenatis.',
+                    'uri-stub'   : '/buy-mattress/iseries/iseries-hybrid/iseries-approval-super-pillow-top',
+                                    'src'        : 'material/sample1.jpg'
+                },
+                4: {
+                    id : 4,
+                    order: 4,
+                    'title' : 'Product Title 3',
+                    'price' : 'Staring at $731',
+                    'desc' : 'Cras a ante eget dui dignissim molestie nec non lectus. Donec id sapien tristique, iaculis odio a, gravida ligula. In hac habitasse platea dictumst. Praesent non lacus elit. Sed convallis erat sem, ac egestas ipsum tempor in. Sed consectetur ex at dolor ullamcorper vulputate. Ut tristique ipsum velit, eget pretium ipsum dictum vel. Aenean ut tempus elit, non facilisis odio. Vivamus hendrerit ipsum vel risus ultrices, ut ornare metus ornare. Quisque semper ante ac pellentesque vestibulum. Cras a massa turpis. Pellentesque congue leo velit, non porta dui euismod nec.<br> <br> Mauris sed enim risus. Quisque mollis justo quis commodo euismod. Nullam non massa in lorem cursus sagittis. Sed laoreet felis mauris, a eleifend sapien molestie eget. Duis at volutpat elit. Phasellus sit amet erat ut libero lobortis sollicitudin pellentesque ac lectus. Phasellus venenatis ultrices justo nec venenatis.',
+                    'uri-stub'   : '/buy-mattress/iseries/iseries-hybrid/iseries-approval-super-pillow-top',
+                                    'src'        : 'material/sample_08.jpg'
+                }
+                }
+
+                </script>-->
+            </div>
+        </div>
+    </body>
+</html>

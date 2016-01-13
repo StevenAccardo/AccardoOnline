@@ -1,0 +1,577 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Lato Light"), local("Lato-Light"), url(http://fonts.gstatic.com/s/lato/v11/EsvMC5un3kjyUhB9ZEPPwg.woff2) format("woff2"); }
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"), url(http://fonts.gstatic.com/s/lato/v11/1YwB1sO8YE1Lyjf12WNiUA.woff2) format("woff2"); }
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Lato Bold"), local("Lato-Bold"), url(http://fonts.gstatic.com/s/lato/v11/H2DMvhDLycM56KNuAtbJYA.woff2) format("woff2"); }
+body {
+  background-color: #e3e3e3;
+  font-family: Lato;
+  margin: 0; }
+
+#banner {
+  width: 100%; }
+
+#container {
+  width: 960px;
+  margin: auto; }
+
+#topsection {
+  overflow: hidden;
+  margin: 3% 2% 0 2%; }
+
+#toptext {
+  width: 63%;
+  float: left;
+  margin-right: 2%; }
+
+#findercontainer {
+  background-color: #f3f3f3;
+  width: 30%;
+  padding: 2%;
+  float: right;
+  margin-bottom: 5%;
+  margin-left: 1%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#finder {
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 0px; }
+
+#findertext {
+  color: #002b5a;
+  margin-bottom: 5px; }
+
+#states, button {
+  display: none;
+}
+
+#innercontainertop {
+  background-color: #f3f3f3;
+  margin-bottom: 0;
+  padding: 4%; }
+
+#toprow {
+  width: 100%;
+  margin-bottom: 5%; }
+
+#botrow {
+  width: 100%; }
+
+.rows {
+  display: inline-block;
+  width: 30%;
+  margin-left: 2%;
+  vertical-align: top; }
+
+.rows h3, .rows p {
+  margin: 0; }
+
+.rows p {
+  margin-bottom: 10%; }
+
+.rows a {
+  color: #002b5a;
+  font-size: 14px;
+  text-decoration: none; }
+
+.links {
+  background-color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 2px #fff inset;
+  padding: 4%;
+  width: 35%;
+  }
+
+.firstrows {
+  margin-left: 0; }
+
+#innercontainerbot {
+  background-color: #f3f3f3;
+  margin-bottom: 4%;
+  margin-top: 3px;
+  overflow: hidden;
+  padding: 4%; }
+
+h1, h2, h3 {
+  color: #002b5a;
+  text-transform: capitalize; }
+
+h1 {
+  font-size: 42px;
+  font-weight: 200;
+  margin-top: 0; }
+
+#innercontainertop h2 {
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 200; }
+
+h3 {
+  font-size: 15px;
+  font-weight: normal; }
+
+.headp {
+  color: #333;
+  font-size: 18px; }
+
+p {
+  font-size: 12px;
+  text-align: justify; }
+
+option {
+  color: #002b5a;
+  font-size: 13px; }
+
+.product {
+  color: #002b5a;
+  font-size: 17px; }
+
+.price {
+  color: #4987ca;
+  font-size: 13px; }
+
+.details {
+  color: #666666;
+  font-size: 13px; }
+
+#productstop {
+  overflow: hidden; }
+
+#productstitle {
+  float: left;
+  margin: 0; }
+
+#filter {
+  float: right;
+  
+  width: 23%; }
+
+#filterby {
+  float: left;
+  color: #696969;
+}
+
+#selectprice {
+  float: right;
+  margin-left: 1%;
+  color: #002b5a;
+  height: 35px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 2px #fff inset;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0; }
+
+li {
+  display: inline-block;
+  width: 21%;
+  background-color: #FFF;
+  padding: 1%;
+  margin-left: 2%; }
+
+#cereal {
+  margin-left: 0; }
+
+li img {
+  width: 100%; }
+
+li > a {
+  color: #002b5a;
+  font-size: 13px; }
+
+.popups {
+  background-color: #FFF;
+  padding: 3%;
+  margin-top: 0;
+  margin-bottom: 3%;
+  overflow: hidden;
+}
+
+#title1 {
+  display:none;
+}
+
+#title2 {
+  display:none;
+}
+
+#title3 {
+  display:none;
+}
+
+#title4 {
+  display:none;
+}
+
+.popupstop {
+  width: 100%;
+  display: inline-block;
+}
+
+.popups .product {
+  float: left;
+  margin-bottom: 0;
+}
+
+.popups .price {
+  clear: both;
+}
+
+.close {
+  float: right;
+  vertical-align: top;
+}
+
+.popupsgroup {
+  width: 100%;
+}
+
+.popupsgroup img {
+  width: 49%;
+  float: right;
+  margin-left: 1%;
+}
+
+.popups .details {
+  width: 49%;
+  float: left;
+  margin-right: 1%;
+}
+
+.buybutton {
+  width: 15%;
+  height: 40px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 2px #fff inset;
+  background-color: #002b5a;
+  color: #FFF;
+  font-size: 14px;
+
+}
+
+
+@media only screen and (max-width: 959px) and (orientation: portrait) {
+
+body {
+  width: 100%;
+}
+
+#container {
+  width: 92%;
+  margin: 0 4% 0 4%; }
+
+#topsection {
+  width: 92%;
+  margin: 0 4% 0 4%;
+  overflow: visible;
+}
+
+#toptext {
+  width: 100%;
+  float: none; 
+  margin: 0;
+}
+
+#findercontainer {
+  width: 88%;
+  padding: 6%;
+  float: none;
+  margin: 0 0 6% 0; 
+  display: block;
+}
+
+#finder {
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 0px; }
+
+#findertext {
+  color: #002b5a;
+  margin-bottom: 5px; }
+
+#innercontainertop {
+  margin-bottom: 0;
+  padding: 5% 6% 5% 6%; } 
+
+#toprow {
+  width: 100%;
+  margin-bottom: 0%; }
+
+#botrow {
+  width: 100%; }
+
+.rows {
+  display: block;
+  width: 100%;
+  margin: 0;
+  vertical-align: top; 
+}
+
+.rows h3, .rows p {
+  margin: 0; }
+
+.rows p {
+  margin-bottom: 15%; }
+
+.links {
+  width: 92%;
+  margin-bottom: 14%;
+  }
+
+.firstrows {
+  margin-left: 0; }
+
+#innercontainerbot {
+  width: 88%;
+  overflow: visible;
+  padding: 6%;}
+
+h1 {
+  font-size: 36px;
+  margin-top: 8%;
+  text-align: center; }
+
+h2 {
+  font-size: 36px;
+  font-weight: 200;
+  margin-top: 0; }
+
+.product {
+  margin: 0;
+}
+
+#productstop {
+  overflow: hidden;
+  width:100%;
+}
+
+#productstitle {
+  float: left;
+  margin: 0; }
+
+#filterby {
+  display: none;
+}
+
+#selectprice {
+  height: 30px;
+  margin: 0;
+  width: 90%;}
+
+ul {
+  padding-left: 0;
+  margin-top: 5%; }
+
+li {
+  display: block;
+  width: 88%;
+  padding: 5% 6% 2% 6%;
+  margin: 4% 0; 
+}
+
+li img {
+  width: 100%;
+  height: 150px; 
+}
+
+.popups {
+  background-color: #FFF;
+  padding: 6%;
+  margin-top: 0;
+  margin-bottom: 3%;
+  overflow: hidden;
+}
+
+.popupsgroup {
+  width: 100%;
+}
+
+.popupsgroup img {
+  width: 100%;
+}
+
+.popups .details {
+  width: 100%;
+}
+
+.buybutton {
+  margin-top: 3%;
+  width: 100%;
+}
+
+}
+
+@media only screen and (max-width: 959px) and (orientation: landscape) {
+
+body {
+  width: 100%;
+}
+
+#container {
+  width: 92%;
+  margin: 0 4% 0 4%; }
+
+#topsection {
+  width: 92%;
+  margin: 0 4% 0 4%;
+  overflow: visible;
+}
+
+#toptext {
+  width: 100%;
+  float: none; 
+  margin: 0;
+}
+
+#findercontainer {
+  width: 88%;
+  padding: 6%;
+  float: none;
+  margin: 0 0 6% 0; 
+  display: block;
+}
+
+#finder {
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 0px; }
+
+#findertext {
+  color: #002b5a;
+  margin-bottom: 5px; }
+
+#innercontainertop {
+  margin-bottom: 0;
+  padding: 5% 6% 5% 6%; } 
+
+#toprow {
+  width: 100%;
+  margin-bottom: 0%; }
+
+#botrow {
+  width: 100%; }
+
+.rows {
+  display: block;
+  width: 100%;
+  margin: 0;
+  vertical-align: top; 
+}
+
+.rows h3, .rows p {
+  margin: 0; }
+
+.rows p {
+  margin-bottom: 10%; }
+
+.links {
+  width: 25%;
+  margin-bottom: 10%;
+  }
+
+.firstrows {
+  margin-left: 0; }
+
+#innercontainerbot {
+  width: 88%;
+  overflow: visible;
+  padding: 6%;}
+
+h1 {
+  font-size: 36px;
+  margin-top: 8%;
+  text-align: center; }
+
+h2 {
+  font-size: 36px;
+  font-weight: 200; }
+
+#productstop {
+  overflow: hidden;
+  width:100%;}
+
+#productstitle {
+  float: left;
+  margin: 0; }
+
+#filterby {
+  display: none;
+}
+
+li {
+  display: inline-block;
+  width: 44%;
+  margin: 0%;
+  padding: 2%; 
+}
+
+#cereal {
+  margin: 0 2% 3% 0;
+}
+
+#flower {
+  margin: 0 0 3% 2%;
+}
+
+#machine {
+  margin: 3% 2% 0 0;
+}
+
+#candy {
+  margin: 3% 0 0 2%;
+}
+
+.popups {
+  background-color: #FFF;
+  padding: 8%;
+  margin-top: 0;
+  margin-bottom: 3%;
+  overflow: hidden;
+}
+
+.popupsgroup {
+  width: 100%;
+}
+
+.popupsgroup img {
+  width: 100%;
+}
+
+.popups .details {
+  width: 100%;
+}
+
+.buybutton {
+  margin-top: 3%;
+  width: 40%;
+}
+
+}
+
+
+

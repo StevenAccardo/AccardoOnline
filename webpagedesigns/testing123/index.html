@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Testing 1..2..3</title>
+        <meta charset = "utf-8"/>
+        <meta name = "viewport" content = "width = device - width, initial-scale = 1.0"/>
+        <link rel = "stylesheet" type = "text/css" href = "style.css"/>
+    </head>
+    <body>
+        <img id="banner"src="images/banner.jpg"></img>
+        <div id="container">
+            <section id="topsection">
+
+                <div id="toptext">
+                    <h1>In Gravida Libero</h1>
+                    <p class="headp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer enim neque, molestie ut placerat id, tincidunt in sem. Pellentesque sodales lobortis eros nec pulvinar. In ac ultrices ipsum, ultricies semper nisi. Morbi ac hendrerit nulla. Sed nec ex commodo, tincidunt felis ac, iaculis ipsum.</p>
+                    <p class="headp">Morbi ac hendrerit nulla. Sed nec ex commodo, tincidunt felis ac, iaculis ipsum</p>
+                </div>
+
+                <div id="findercontainer">
+                    <h2 id="finder">State Finder</h2>
+                    <p id="findertext">Morbi ac hendrerit nulla. Sed nec ex commodo</p> <!--This wasn't included in the original file. I added it, to match the final images.-->
+                    <form>
+                        
+                        <select id="states">
+                            <option value="">Select State</option>
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="DC">District Of Columbia</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="ID">Idaho</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IN">Indiana</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="ME">Maine</option>
+                            <option value="MD">Maryland</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MI">Michigan</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MO">Missouri</option>
+                            <option value="MT">Montana</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NV">Nevada</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="NY">New York</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="OH">Ohio</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="OR">Oregon</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="TX">Texas</option>
+                            <option value="UT">Utah</option>
+                            <option value="VT">Vermont</option>
+                            <option value="VA">Virginia</option>
+                            <option value="WA">Washington</option>
+                            <option value="WV">West Virginia</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                        <input type="text" id="search" onkeyup="searchstate()"placeholder="Search Hotels"><img src="images/search.png"></img>
+                        <!--<button type="submit">Submit</button>-->
+                    </form>
+                </div>
+            </section>
+
+            <div id="innercontainertop">
+                <h2>In gravida</h2>
+                <div id="toprow">
+                    <div class="rows firstrows">
+                        <h3>Cras ac mauris</h3>
+                        <p>nteger dictum hendrerit pharetra. Cras fermentum posuere egestas.<br><br></p>
+                        <div class="links"><a>Learn More &nbsp&nbsp&gt</a></div>
+                    </div>
+                    <div class="rows">
+                        <h3>Curabitur elementum</h3>
+                        <p>Cras vel imperdiet mauris. Pellentesque libero mauris, interdum a felis et, condimentum mattis erat.</p>
+                        <div class="links"><a>Learn More &nbsp&nbsp&gt</a></div>
+                    </div>
+                    <div class="rows">
+                        <h3>Awards and Recognitions</h3>
+                        <p>Aliquam eget ligula mauris. Etiam viverra non turpis eu auctor. Nullam pretium est libero, et condimentum massa egestas id. </p>
+                        <div class="links"><a>Learn More &nbsp&nbsp&gt</a></div>
+                    </div>
+                </div>
+
+                <div id="botrow">
+                    <div class="rows firstrows">
+                        <h3>Morbi placerat </h3>
+                        <p> Nam feugiat ultrices ligula eget faucibus. Mauris convallis ipsum est.<br><br></p>
+                        <div class="links"><a>Learn More &nbsp&nbsp&gt</a></div>
+                    </div>
+                    <div class="rows">
+                        <h3>Suspendisse eu</h3>
+                        <p>Duis pretium elementum dui, id feugiat neque facilisis vel.<br><br></p>
+                        <div class="links"><a>Learn More &nbsp&nbsp&gt</a></div>
+                    </div>
+                    <div class="rows">
+                        <h3> Integer faucibus</h3>
+                        <p> Vivamus at rutrum est, eu pellentesque lacus. Curabitur imperdiet tortor sit amet enim ullamcorper, a aliquet odio rutrum.</p>
+                        <div class="links"><a>Learn More &nbsp&nbsp&gt</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="innercontainerbot">
+                <div id="productstop">
+                    <h2 id="productstitle">Products</h2>
+                    <div id="filter">
+                        <p id="filterby">Filter by</p>
+                        <select id="selectprice">
+                            <option id="optionall"value="all">All</option>
+                            <option id="option1" value="1">Less Than $500</option>
+                            <option id="option2" value="2">From $500 to $1000</option>
+                            <option id="option3" value="3">From $1000 to $2000</option>
+                            <option id="option4" value="4">$2000 or more</option>
+                        </select>
+                    </div>
+                </div>
+                <ul>
+                    <li id="cereal">
+                        <p class="product">Product Title 1</p>
+                        <p class="price">Starting at $500 </p>
+                        <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br><br></p>
+                        <img src="images/cereal_b.jpg"></img>
+                        <a>Learn More &gt</a>
+                    </li>
+                    <li id="flower">
+                        <p class="product">Product Title 2</p>
+                        <p class="price">Starting at $1900</p>
+                        <p class="details">Donec ornare magna sit amet erat molestie sollicitudin ac vitae lectus.</p>
+                        <img src="images/flower_b.jpg"></img>
+                        <a>Learn More &gt</a>
+                    </li>
+                    <li id="machine">
+                        <p class="product">Product Title 3</p>
+                        <p class="price">Starting at $2730</p>
+                        <p class="details">Cras non metus sed odio tristique imperdiet.<br><br></p>
+                        <img src="images/machine_b.jpg"></img>
+                        <a>Learn More &gt</a>
+                    </li>
+                    <li id="candy">
+                        <p class="product">Product Title 4</p>
+                        <p class="price">Starting at $731</p>
+                        <p class="details">Pellentesque mattis tellus ut molestie dapibus.<br><br></p>
+                        <img src="images/candy_b.jpg"></img>
+                        <a>Learn More &gt</a>
+                    </li>
+                </ul>
+            
+
+                <div class="popups" id="title1">
+                    <div class="popupstop">
+                        <p class="product">Product Title 1</p>
+                        <img class="close" src="images/close.png"></img>
+                    </div>
+                    <p class="price">Starting at $500 </p>
+                    
+                    <div class="popupsgroup">
+                        <p class="details">Cras a ante eget dui dignissim molestie nec non lectus. Donec id sapien tristique, iaculis odio a, gravida ligula. In hac habitasse platea dictumst. Praesent non lacus elit. Sed convallis erat sem, ac egestas ipsum tempor in. Sed consectetur ex at dolor ullamcorper vulputate. Ut tristique ipsum velit, eget pretium ipsum dictum vel. Aenean ut tempus elit, non facilisis odio. Vivamus hendrerit ipsum vel risus ultrices, ut ornare metus ornare. Quisque semper ante ac pellentesque vestibulum. Cras a massa turpis. Pellentesque congue leo velit, non porta dui euismod nec.<br> <br> Mauris sed enim risus. Quisque mollis justo quis commodo euismod. Nullam non massa in lorem cursus sagittis. Sed laoreet felis mauris, a eleifend sapien molestie eget. Duis at volutpat elit. Phasellus sit amet erat ut libero lobortis sollicitudin pellentesque ac lectus. Phasellus venenatis ultrices justo nec venenatis.<br><br></p>
+                        <img src="images/cereal_b.jpg"></img>
+                        <input type="submit" class="buybutton"name = "submit" value="Buy Online &nbsp&nbsp&gt">
+                    </div>
+                </div>
+
+                <div class="popups" id="title2">
+                    <div class="popupstop">
+                        <p class="product">Product Title 2</p>
+                        <img class="close" src="images/close.png"></img>
+                    </div>
+                    <p class="price">Starting at $1900</p>
+                    <div class="popupsgroup">
+                        <p class="details">Cras a ante eget dui dignissim molestie nec non lectus. Donec id sapien tristique, iaculis odio a, gravida ligula. In hac habitasse platea dictumst. Praesent non lacus elit. Sed convallis erat sem, ac egestas ipsum tempor in. Sed consectetur ex at dolor ullamcorper vulputate. Ut tristique ipsum velit, eget pretium ipsum dictum vel. Aenean ut tempus elit, non facilisis odio. Vivamus hendrerit ipsum vel risus ultrices, ut ornare metus ornare. Quisque semper ante ac pellentesque vestibulum. Cras a massa turpis. Pellentesque congue leo velit, non porta dui euismod nec.<br> <br> Mauris sed enim risus. Quisque mollis justo quis commodo euismod. Nullam non massa in lorem cursus sagittis. Sed laoreet felis mauris, a eleifend sapien molestie eget. Duis at volutpat elit. Phasellus sit amet erat ut libero lobortis sollicitudin pellentesque ac lectus. Phasellus venenatis ultrices justo nec venenatis.</p>
+                        <img src="images/flower_b.jpg"></img>
+                        <input type="submit" class="buybutton"name = "submit" value="Buy Online &nbsp&nbsp&gt">
+                    </div>
+                </div>
+
+                <div class="popups" id="title3">
+                    <div class="popupstop">
+                        <p class="product">Product Title 3</p>
+                        <img class="close" src="images/close.png"></img>
+                    </div>
+                    <p class="price">Starting at $2730</p>
+                    <div class="popupsgroup">
+                        <p class="details">Cras a ante eget dui dignissim molestie nec non lectus. Donec id sapien tristique, iaculis odio a, gravida ligula. In hac habitasse platea dictumst. Praesent non lacus elit. Sed convallis erat sem, ac egestas ipsum tempor in. Sed consectetur ex at dolor ullamcorper vulputate. Ut tristique ipsum velit, eget pretium ipsum dictum vel. Aenean ut tempus elit, non facilisis odio. Vivamus hendrerit ipsum vel risus ultrices, ut ornare metus ornare. Quisque semper ante ac pellentesque vestibulum. Cras a massa turpis. Pellentesque congue leo velit, non porta dui euismod nec.<br> <br> Mauris sed enim risus. Quisque mollis justo quis commodo euismod. Nullam non massa in lorem cursus sagittis. Sed laoreet felis mauris, a eleifend sapien molestie eget. Duis at volutpat elit. Phasellus sit amet erat ut libero lobortis sollicitudin pellentesque ac lectus. Phasellus venenatis ultrices justo nec venenatis.</p>
+                        <img src="images/machine_b.jpg"></img>
+                        <input type="submit" class="buybutton"name = "submit" value="Buy Online &nbsp&nbsp&gt">
+                    </div>
+                </div>
+
+                <div class="popups" id="title4">
+                    <div class="popupstop">
+                        <p class="product">Product Title 1</p>
+                        <img class="close" src="images/close.png"></img>
+                    </div>
+                    <p class="price">Starting at $731</p>
+                    <div class="popupsgroup">
+                        <p class="details">Cras a ante eget dui dignissim molestie nec non lectus. Donec id sapien tristique, iaculis odio a, gravida ligula. In hac habitasse platea dictumst. Praesent non lacus elit. Sed convallis erat sem, ac egestas ipsum tempor in. Sed consectetur ex at dolor ullamcorper vulputate. Ut tristique ipsum velit, eget pretium ipsum dictum vel. Aenean ut tempus elit, non facilisis odio. Vivamus hendrerit ipsum vel risus ultrices, ut ornare metus ornare. Quisque semper ante ac pellentesque vestibulum. Cras a massa turpis. Pellentesque congue leo velit, non porta dui euismod nec.<br> <br> Mauris sed enim risus. Quisque mollis justo quis commodo euismod. Nullam non massa in lorem cursus sagittis. Sed laoreet felis mauris, a eleifend sapien molestie eget. Duis at volutpat elit. Phasellus sit amet erat ut libero lobortis sollicitudin pellentesque ac lectus. Phasellus venenatis ultrices justo nec venenatis.</p>
+                        <img src="images/candy_b.jpg"></img>
+                        <input type="submit" class="buybutton"name = "submit" value="Buy Online &nbsp&nbsp&gt">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Loading the scripts at the bottom, so the page will load without waiting for the scripts to load-->
+        <!--Load JQuery from the CDN first-->
+        <!--Loading the production version-->
+        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+        <!--If CDN fails to load, serve up the local version-->
+        <script>window.jQuery || document.write('<script src="js/jquery-2.1.4.min.js"><\/script>');</script>
+        <!--The JS file that I create, which holds my JQuery code-->
+        <script src="js/script.js"></script>
+    </body>
+</html>
