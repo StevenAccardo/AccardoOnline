@@ -23,7 +23,7 @@ p {
 
 #backgroundImage {
     height: 345px;
-    background-image: url('../Images/water.jpg');
+    background-image: url('../Images/landingpagebanner.jpg');
     background-position: center center;
 	background-repeat: no-repeat;
 	-webkit-background-size: 100% 100%;
@@ -91,6 +91,13 @@ input {
 	text-transform:uppercase;
 }
 
+input:hover {
+	-webkit-box-shadow: 0px 0px 20px 10px rgba #2da1dc;
+	-moz-box-shadow: 0px 0px 20px 10px #2da1dc;
+	box-shadow: 0px 0px 20px 10px #2da1dc;
+	
+}
+
 #bottom {
 	margin-top: 4%;
     background-color: #222;
@@ -118,7 +125,7 @@ input {
 	padding-left: 25px;
 }
 
-@media only screen and (min-width: 150px) and (max-width: 600px)
+@media only screen and (min-width: 150px) and (max-width: 1000px) and (orientation: portrait)
 {
 
 #logo {
@@ -135,8 +142,68 @@ h1 {
 }	
 
 #bottomselections p {
+	font-size: 14px;
+	text-align:center;
+}
+
+#aboutme {
+    width: 100%;
+	padding-right: 0%;
+	padding-left: 0%;
+	
+}
+
+#webmaster {
+    width: 100%;
+	padding-left: 0%;
+	padding-right: 0%;
+}
+
+#github {
+    width: 100%;
+	padding: 0%;
+}
+
+input {
+	width: 100%;
+	margin: auto;
+}
+
+#bottom {
+	height: 50px;
+}
+
+#mainfooter {
+	height: 40px;
+}
+
+#mainfooter p {
+	padding-top: 2%;
+	padding-left: 1%;
 	font-size: 12px;
-	line-height: 10px;
+}
+
+}
+
+@media only screen and (min-width: 150px) and (max-width: 1000px) and (orientation: landscape)
+{
+
+#logo {
+	padding-left: 0px;
+}	
+	
+#backgroundImage {
+	height: 100px;
+}
+
+h1 {
+	font-size: 20px;
+	font-weight: 400;
+}	
+
+#bottomselections p {
+	font-size: 14px;
+	text-align:center;
 }
 
 #aboutme {
@@ -157,6 +224,11 @@ h1 {
 	padding-left: 0%;
 }
 
+input {
+	width: 100%;
+	margin: auto;
+}
+
 #bottom {
 	height: 50px;
 }
@@ -170,8 +242,5 @@ h1 {
 	padding-left: 1%;
 	font-size: 12px;
 }
-
-
-
 
 }
