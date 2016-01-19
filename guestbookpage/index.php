@@ -15,6 +15,11 @@
 	{
 		alert(msg);
 	}
+	
+	function waitAlert(msg)
+	{
+		alert(msg);
+	}
 	</script>
 </head>
 
@@ -35,27 +40,39 @@
 		$comment = $_POST["txt_comment"];
 		$date = time(); //Returns the current time, measured in seconds since the Unix Epoch
 		
-		//Checks the name and comment columns in the table to see if the new user input matches what is already stored
-		$query1 = "SELECT * FROM guestbook WHERE name = '$name' AND comment = '$comment'";
-		$result = mysql_query ($query1, $connection) or die(mysql_error());
-		$rows = mysql_num_rows($result);//stores the number of rows that the query returned
+		//Retrieves the last entered timestamp in the table
+		$query2 = "SELECT date_auto FROM guestbook ORDER BY date_auto DESC LIMIT 1";
+		$storedtime = mysql_query ($query2, $connection) or die(mysql_error());
+		$checktime = mysql_fetch_assoc($storedtime);
 		
-	
-		//Only writes to database if there's a name entered in the field and there were zero rows returned by the query, which means that there are no copies of the new user input already stored in the database
-		if ($len > 0 and $rows == 0)
+		if ($date > ($checktime['date_auto'] + 30))
 		{
-			//Stores MySQL command into variable and then creates the query or throws an error if query request was unsuccesful
-			$query2 = "INSERT INTO guestbook (primaryid, name, email, comment, date_auto) VALUES (NULL, '$name', '$email', '$comment', '$date')";
-			mysql_query ($query2, $connection) or die(mysql_error());
-		}
 		
-		elseif($len == 0)
-		{
-			echo '<script> noNameAlert("I need your name if I\'m going to know who stopped by. Please make sure to fill in the \"Name:\" field.");</script>';
+			//Checks the name and comment columns in the table to see if the new user input matches what is already stored
+			$query1 = "SELECT * FROM guestbook WHERE name = '$name' AND comment = '$comment'";
+			$result = mysql_query ($query1, $connection) or die(mysql_error());
+			$rows = mysql_num_rows($result);//stores the number of rows that the query returned that have matching names and comments
+		
+			//Only writes to database if there's a name entered in the field and there were zero rows returned by the query, which means that there are no copies of the new user input already stored in the database
+			if ($len > 0 and $rows == 0)
+			{
+				//Stores MySQL command into variable and then creates the query or throws an error if query request was unsuccesful
+				$query3 = "INSERT INTO guestbook (primaryid, name, email, comment, date_auto) VALUES (NULL, '$name', '$email', '$comment', '$date')";
+				mysql_query ($query3, $connection) or die(mysql_error());
+			}
+			
+			elseif($len == 0)
+			{
+				echo '<script> noNameAlert("I need your name if I\'m going to know who stopped by. Please make sure to fill in the \"Name:\" field.");</script>';
+			}
+			else
+			{
+				echo '<script> duplicateAlert("Oops! You have entered in a duplicate name and comment. Please modify your entries, and try again.");</script>';
+			}
 		}
 		else
 		{
-			echo '<script> duplicateAlert("Oops! You have entered in a duplicate name and comment. Please modify your entries, and try again.");</script>';
+			echo '<script> waitAlert("You just entered a comment. You have to cool down and wait before you can enter another one.");</script>';
 		}
 	}
 ?>
