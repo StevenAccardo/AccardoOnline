@@ -35,30 +35,55 @@ a:hover, a:active {
 
 }
 
-.mainheader nav ul{
+.mainheader nav ul.parent {
 	list-style:none;
 	margin:0 auto;
 	float: right;
 }
 
-.mainheader nav ul li{
+ul.parent > li {
 	float: left;
 	display: inline;
 }
 
+ul.child {
+    display: none;
+	width: 100px;
+	padding: 0;
+	list-style: none;
+	position: absolute;
+	z-index: 100;
+}
+
+ul.child > li {
+	margin:auto;
+}
+
+ul.child a:link {
+	background-color: rgba(0, 102, 102, 0.4);
+	width: 70px;
+	text-align: center;
+}
+
+.child li a:nth-child(2){
+	margin: 3px 0;
+}
+
 .mainheader nav a:link, .mainheader nav a:visited {
-	color: #FFF; /*white*/
+	color: #FFF; 
 	display: inline-block;
 	padding: 10px 25px;
 	height: 20px;
 }
 
-.mainheader nav a:hover, .mainheader nav a:active, .mainheader nav .active a:link, .mainheader nav .active a:visited {
-	background-color: #00feff
+.mainheader nav a:hover, .mainheader nav a:active {
+	background-color: #00feff;
 	text-shadow: none;
 }
 
-
+.selected {
+	border: solid 2px #FFF;
+}
 
 h2 {
 	margin-bottom: 20px;
