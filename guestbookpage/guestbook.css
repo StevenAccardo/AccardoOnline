@@ -28,21 +28,19 @@ a:hover, a:active {
 	padding: 0px 5px;
 }
 
-.header nav {
-	
-	height: 3%;
-	width: 10%;
+.mainheader nav {
+	width: 200px;
 	float: right;
 
 }
 
-.header nav ul{
+.mainheader nav ul{
 	list-style:none;
 	margin:0;
 	padding: 0;
 }
 
-.header nav ul li{
+ul.parent > li {
 	background-color: #7ba693;
 	text-align: center;
 	display: block;
@@ -54,12 +52,22 @@ a:hover, a:active {
 	margin: 5px;
 }
 
-.header nav a:link, .header nav a:visited {
+ul.child {
+    display: none;
+	list-style: none;
+}
+
+.child li:nth-child(2){
+	margin: 5px 0;
+}
+
+
+.mainheader nav a:link, .mainheader nav a:visited {
 	color: #FFF;
 	
 }
 
-.header nav a:hover, .header nav a:active {
+.mainheader nav a:hover, .mainheader nav a:active {
 	background-color: #FFF;
 	color: #7ba693;
 	border-style: solid;
@@ -168,7 +176,7 @@ form {
 	background-size: 100% 100%;
 	}
 	
-	.header nav {
+	.mainheader nav {
 	height: 3%;
 	width: 100%;
 	}
@@ -229,7 +237,7 @@ form {
 	background-size: 100% 100%;
 	}
 	
-	.header nav {
+	.mainheader nav {
 	height: 3%;
 	width: 100%;
 	}

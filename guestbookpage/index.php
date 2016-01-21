@@ -81,17 +81,27 @@
 
 <body>
 
-	<header class = "header">
+	<header class = "mainheader">
 		<nav>
-			<ul>
+			<ul class="parent">
 				<li><a href="/">Home</a></li>
-				<li><a href="#">Guestbook</a></li>
+				<li><a href="#">Webpage Designs<a/>
+					<ul class="child">
+						<li>
+							<a href="/webpagedesigns/shopping">Shopping</a>
+						</li>
+						<li>
+							<a href="/webpagedesigns/firststeps">First Steps</a>
+						</li>
+					</ul>
+				</li>
+				<li><a class="selected" href="#">Guestbook</a></li>
 				<li><a href="/contact">Contact</a></li>
 			</ul>
 		</nav>
 		<center>
 		<h1 class = "title">Please leave a comment or your name to let me know that you were here!</h1>
-		<p class = "languages"><b>This Guestbook was created using HTML5, CSS3, JavaScript, PHP, and SQL.</b></p>
+		<p class = "languages"><b>This Guestbook was created using HTML5, CSS3, JavaScript, jQuery, PHP, and SQL.</b></p>
 		</center>
 	</header>
 <center>
@@ -180,7 +190,15 @@ for ($i=0; $i < mysql_num_rows($result); $i++)
 
 </center>
 
+	<!--Loading the scripts at the bottom, so the page will load without waiting for the scripts to load-->
+	<!--Load JQuery from the CDN first-->
+	<!--Loading the production version-->
+	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 
+	<!--If CDN fails to load, serve up the local version-->
+	<script>window.jQuery || document.write('<script src="js/jquery-2.1.4.min.js"><\/script>');</script>
+	<!--The JS file that I create, which holds my JQuery code-->
+	<script src = "js/guestbook.js"></script>
 </body>
 <footer class ="mainfooter">
 	<p>Copyright &copy; 2015 <a href = "www.StevenAccardo.com" title ="website1">www.StevenAccardo.com</a></p>
