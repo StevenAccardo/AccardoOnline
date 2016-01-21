@@ -7,7 +7,31 @@
         <link rel = "stylesheet" type = "text/css" href = "style.css"/>
     </head>
     <body>
-        <img id="banner"src="images/banner.jpg"></img>
+        <header class="mainheader">
+            <img id="banner"src="images/banner.jpg"></img>
+            <nav>
+                <ul class="parent">
+                    <li><a href="../../">Home</a></li>
+                    <li><a href="#">Webpage Designs<a/>
+                        <ul class="child">
+                            <li>
+                                <a class="selected" href="#">Shopping</a>
+                            </li>
+                            <li>
+                                <a href="../firststeps">First Steps</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../../guestbook">Guestbook</a>
+                    </li>
+                    <li>
+                        <a href="../../contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
         <div id="container">
             <section id="topsection">
 
@@ -135,7 +159,7 @@
                         </select>
                     </div>
                 </div>
-                <ul>
+                <ul class="productlist">
                     <li id="cereal">
                         <p class="product">Product Title 1</p>
                         <p class="price">Starting at $500 </p>
