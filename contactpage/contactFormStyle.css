@@ -14,6 +14,10 @@ body {
     background-repeat: no-repeat;
 }
 
+#mobilenav {
+	display: none;
+}
+
 a {
 	text-decoration: none;
 }
@@ -24,7 +28,7 @@ a:link, a:visited {
 
 a:hover, a:active {
 	background-color: #00feff;
-	color: #FFF; /* White */
+	color: #FFF;
 	padding: 2px 4px;
 	
 }
@@ -163,13 +167,39 @@ input:hover, textarea:hover, select:hover, input:focus, textarea:focus, select:f
 
 @media only screen and (min-width: 150px) and (max-width: 700px) and (orientation: portrait)
 {
+
+
 	body {
 		width: 96%;
 		font-size: 80%;
 		padding: 2%;
 		margin:0;
 	}
+
+	#mobilenav {
+	display: initial;
+	}
+
+	#desktopnav {
+		display:none;
+	}
 	
+	nav#mobilenav ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	nav#mobilenav ul > li {
+		background-color: rgba(0, 102, 102, 0.4);
+		width: 100%;
+		text-align: center;
+	}
+
+
+	.mainheader nav a:link, .mainheader nav a:visited {
+		display: block;
+	}
+
 	textarea {
 		padding: 2% 1%;
 		width: 98%;
@@ -177,27 +207,6 @@ input:hover, textarea:hover, select:hover, input:focus, textarea:focus, select:f
 	
 	.submit input {
 		width: 100%;
-	}
-	
-	.mainheader nav {
-		height: 120px;	
-	}
-
-	.mainheader nav ul{
-		padding-left: 0;
-		float: none;
-	}
-
-	.mainheader nav ul li{
-		width: 100%;
-		text-align: center;
-		float: none;
-	}
-
-	.mainheader nav a:link, .mainheader nav a:visited {
-		padding: 10px 25px;
-		height: 20px;
-		display: block;
 	}
 	
 	.mainFooter {
@@ -216,6 +225,31 @@ input:hover, textarea:hover, select:hover, input:focus, textarea:focus, select:f
 		margin:0;
 	}
 	
+	#mobilenav {
+	display: initial;
+	}
+
+	#desktopnav {
+		display:none;
+	}
+	
+	nav#mobilenav ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	nav#mobilenav ul > li {
+		background-color: rgba(0, 102, 102, 0.4);
+		width: 100%;
+		text-align: center;
+	}
+
+
+	.mainheader nav a:link, .mainheader nav a:visited {
+		display: block;
+	}
+
+
 	textarea {
 		padding: 2% 1%;
 		width: 98%;
@@ -223,28 +257,6 @@ input:hover, textarea:hover, select:hover, input:focus, textarea:focus, select:f
 	
 	.submit input {
 		width: 100%;
-	}
-	
-	.mainheader nav {
-		height: 120px;	
-	}
-
-	.mainheader nav ul{
-		padding-left: 0;
-		float: none;
-	}
-
-	.mainheader nav ul li{
-		width: 100%;
-		text-align: center;
-		float: none;
-	}
-
-	.mainheader nav a:link, .mainheader nav a:visited {
-		padding: 10px 25px;
-		height: 20px;
-		display: block;
-	}
 	
 	.mainFooter {
 	width: 100%;
