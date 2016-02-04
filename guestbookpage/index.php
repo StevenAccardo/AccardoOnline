@@ -95,8 +95,12 @@
 						</li>
 					</ul>
 				</li>
-				<li><a class="selected" href="#">Guestbook</a></li>
-				<li><a href="/contact">Contact</a></li>
+				<li>
+					<a class="selected" href="#">Guestbook</a>
+				</li>
+				<li>
+					<a href="/contact">Contact</a>
+				</li>
 			</ul>
 		</nav>
 		<center>
