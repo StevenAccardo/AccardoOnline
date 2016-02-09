@@ -21,9 +21,11 @@
 }
 
 $startfont: blue;
-$datafont: red;
+$datafont: #cc0000;
 $topcolor: blue;
-$botcolor: red;
+$botcolor: #cc0000;
+$linkcolor: white;
+$linkhover: #cc0000;
 
 $font: 'beamweapon';
 
@@ -33,7 +35,7 @@ $font: 'beamweapon';
 }
 
 body {
-	background-image: url('../../../Images/moon2opac.jpg');
+	background-image: url('../../../Images/moonOpac.jpg');
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -44,6 +46,18 @@ body {
 	color: $startfont;
 	font-family: $font;
 	text-shadow: 0px 0px 30px white;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link, a:visited {
+	color: $linkcolor;
+}
+
+a:hover {
+	color: #cc0000;
 }
 
 #container {
@@ -67,12 +81,44 @@ body {
 	font-size: 22px;
 }
 
-span.noData {
-	clear: both;
-}
-
 span.data {
 	color: $datafont;
 	margin: 2% 0;
 	display: block;
+}
+
+span.data:hover {
+	text-shadow: 0px 0px 20px $startfont;
+	font-size: 25px;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 2000px) and (orientation: portrait)
+{
+	#searchbtn {
+	width: 200px;
+	margin:auto;
+	}
+}
+
+@media only screen and (min-width: 500px) and (max-width: 2000px) and (orientation: landscape)
+{
+	#searchbtn {
+	width: 200px;
+	}
+}
+
+@media only screen and (min-width: 700px) and (max-width: 2000px) and (orientation: portrait)
+{
+	span.data {
+	margin: 0;
+	display: inline;
+	}
+}
+
+@media only screen and (min-width: 700px) and (max-width: 2000px) and (orientation: landscape)
+{
+	span.data {
+	margin: 0;
+	display: inline;
+	}
 }

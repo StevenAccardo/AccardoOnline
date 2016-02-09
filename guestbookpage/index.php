@@ -45,7 +45,7 @@
 		$storedtime = mysql_query ($query2, $connection) or die(mysql_error());
 		$checktime = mysql_fetch_assoc($storedtime);
 		
-		if ($date > ($checktime['date_auto'] + 30))
+		if ($date > ($checktime['date_auto'] + 180))
 		{
 		
 			//Checks the name and comment columns in the table to see if the new user input matches what is already stored
@@ -85,6 +85,13 @@
 		<nav>
 			<ul class="parent">
 				<li><a href="/">Home</a></li>
+				<li><a href="#">Web Apps<a/>
+					<ul class="child">
+						<li>
+							<a href="/apps/moonRisingApp">Moon Rising App</a>
+						</li>
+					</ul>
+				</li>
 				<li><a href="#">Webpage Designs<a/>
 					<ul class="child">
 						<li>
