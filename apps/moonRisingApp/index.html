@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Moon Rising App</title>
+	<meta charset = "utf-8"/>
+	<meta name = "viewport" content = "width = device - width, initial-scale = 1.0"/>
+	<link rel = "stylesheet" type = "text/css" href = "styles/style.css"/>
+</head>
+
+<body>
+	<div id="container">
+		<div id="upperText">
+			<h1>Moon Rising App</h1>
+			<h2>This app allows the user to gather real-time data about the Earth's moon.</h2>
+			<h3>This app is currently under construction.</h3>
+			<!-- <h3>This app pulls data from the </h3> -->
+		</div>
+
+		<input type="submit" value="Update" id="searchbtn">
+
+		<div id="responsewrapper">
+			<p>
+				<span class="noData" >Current age of the Moon in days: <span class="data" id="age"></span></span>
+			</p>
+			<p>
+				<span class="noData" >Illumination of the Moon: <span class="data" id="illumination"></span></span>
+			</p>
+			<p>
+				<span class="noData" >Stage of the Moon: <span class="data" id="stage"></span></span>
+			</p>
+			<p>
+				<span class="noData" >Distance from the center of the Earth: <span class="data" id="coreDistance"></span></span>
+			</p>
+			<p>
+				<span class="noData" >Distance from the Sun: <span class="data" id="sunDistance"></span></span>
+			</p>
+			<p>
+				<span class="noData" >Time-Date of the full Moon: <span class="data" id="fullMoon"></span></span>
+			</p>
+			<p>
+				<span class="noData" >Time-Date of the new Moon: <span class="data" id="newMoon"></span></span>
+			</p>
+		</div>
+	</div>
+	<script src="js/script1.js"></script>
+</body>
+</html>
