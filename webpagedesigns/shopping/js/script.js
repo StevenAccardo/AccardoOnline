@@ -5,38 +5,21 @@ $(function() {
 		   ----------------- */
 
 
-	$('#cereal img').click(function(){
+	$('#cereal img, #cereal .product, #cerealLinks').click(function(){
 		$('#title1').show(500);
 	});
 
-	$('#cereal .product').click(function(){
-		$('#title1').show(500);
+	$('#flower img, #flower .product, #flowerLinks').click(function(){
+	$('#title2').show(500);
 	});
 
-	$('#flower img').click(function(){
-		$('#title2').show(500);
+	$('#machine img, #machine .product, #machineLinks').click(function(){
+	$('#title3').show(500);
 	});
 
-	$('#flower .product').click(function(){
-		$('#title2').show(500);
+	$('#candy img, #candy .product, #candyLinks').click(function(){
+	$('#title4').show(500);
 	});
-
-	$('#machine img').click(function(){
-		$('#title3').show(500);
-	});
-
-	$('#machine .product').click(function(){
-		$('#title3').show(500);
-	});
-
-	$('#candy img').click(function(){
-		$('#title4').show(500);
-	});
-
-	$('#candy .product').click(function(){
-		$('#title4').show(500);
-	});
-
 
 		   /* ---------------------
 		   Product Dropdowns Close
@@ -109,20 +92,9 @@ $(function() {
     	alert('You just bought something!')
     });
 
-		    /* ---------------------
-	   		      Navbar Dropdown
-	  	 	--------------------- */
-
-
-    $(function() {
-	  	$( 'ul.parent > li' ).hover(
-	        function(){
-	            $(this).children('.child').slideDown(100);
-	        },
-	        function(){
-	            $(this).children('.child').slideUp(100);
-	        }
-	    );
+    $('.productLinks').click(function(){
+		$('#title1').show(500);
 	});
+
 
 });

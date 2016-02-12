@@ -4,62 +4,42 @@
         <title>Shopping</title>
         <meta charset = "utf-8"/>
         <meta name = "viewport" content = "width = device - width, initial-scale = 1.0"/>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <link rel = "stylesheet" type = "text/css" href = "style.css"/>
     </head>
     <body>
-        <header class="mainheader">
-            <img id="banner"src="images/banner.jpg"></img>
-            <nav id="desktopnav">
-                <ul class="parent">
-                    <li>
-                        <a href="../../">Home</a>
-                    </li>
-                    <li><a href="#">Web Apps<a/>
-                        <ul class="child">
-                            <li>
-                                <a href="../../apps/moonRisingApp">Moon Rising App</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Webpage Designs<a/>
-                        <ul class="child">
-                            <li>
-                                <a class="selected" href="#">Shopping</a>
-                            </li>
-                            <li>
-                                <a href="../firststeps">First Steps</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="../../guestbook">Guestbook</a>
-                    </li>
-                    <li>
-                        <a href="../../contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+        <img id="banner"src="images/banner.jpg"></img>
 
-            <nav id="mobilenav">
-            <ul>
-                <li>
-                    <a href="../../">Home</a>
-                </li>
-                <li>
-                    <a class="selected" href="#">Shopping</a>
-                </li>
-                <li>
-                    <a href="../firststeps">First Steps</a>
-                </li>
-                <li>
-                    <a href="../../guestbook">Guestbook</a>
-                </li>
-                <li>
-                    <a href="../../contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        </header>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            
+            <!--menu-->
+            <div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/">Home</a></li>
+                    <!--Drop Down Menu-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Web Apps <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/apps/moonRisingApp">Moon Rising App</a></li>
+                        </ul>
+                    </li>
+                    <!--Drop Down Menu-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Webpage Designs <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/webpagedesigns/firststeps">First Steps</a></li>
+                            <li class="active"><a href="#">Shopping</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/guestbook">Guestbook</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+            
         
         <div id="container">
             <section id="topsection">
@@ -194,28 +174,28 @@
                         <p class="price">Starting at $500 </p>
                         <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br><br></p>
                         <img src="images/cereal_b.jpg"></img>
-                        <a>Learn More &gt</a>
+                        <a id="cerealLinks">Learn More &gt</a>
                     </li>
                     <li id="flower">
                         <p class="product">Product Title 2</p>
                         <p class="price">Starting at $1900</p>
                         <p class="details">Donec ornare magna sit amet erat molestie sollicitudin ac vitae lectus.</p>
                         <img src="images/flower_b.jpg"></img>
-                        <a>Learn More &gt</a>
+                        <a id="flowerLinks">Learn More &gt</a>
                     </li>
                     <li id="machine">
                         <p class="product">Product Title 3</p>
                         <p class="price">Starting at $2730</p>
                         <p class="details">Cras non metus sed odio tristique imperdiet.<br><br></p>
                         <img src="images/machine_b.jpg"></img>
-                        <a>Learn More &gt</a>
+                        <a id="machineLinks">Learn More &gt</a>
                     </li>
                     <li id="candy">
                         <p class="product">Product Title 4</p>
                         <p class="price">Starting at $731</p>
                         <p class="details">Pellentesque mattis tellus ut molestie dapibus.<br><br></p>
                         <img src="images/candy_b.jpg"></img>
-                        <a>Learn More &gt</a>
+                        <a id="candyLinks">Learn More &gt</a>
                     </li>
                 </ul>
             
@@ -262,7 +242,7 @@
 
                 <div class="popups" id="title4">
                     <div class="popupstop">
-                        <p class="product">Product Title 1</p>
+                        <p class="product">Product Title 4</p>
                         <img class="close" src="images/close.png"></img>
                     </div>
                     <p class="price">Starting at $731</p>
@@ -275,14 +255,11 @@
             </div>
         </div>
 
-        <!--Loading the scripts at the bottom, so the page will load without waiting for the scripts to load-->
-        <!--Load JQuery from the CDN first-->
-        <!--Loading the production version-->
-        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-
-        <!--If CDN fails to load, serve up the local version-->
+  
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/jquery-2.1.4.min.js"><\/script>');</script>
-        <!--The JS file that I create, which holds my JQuery code-->
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         <script src="js/script.js"></script>
     </body>
 </html>

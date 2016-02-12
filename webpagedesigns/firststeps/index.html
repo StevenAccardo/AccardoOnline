@@ -4,8 +4,10 @@
 <head>
 	<title>.:: First Steps ::.</title>
 	<meta charset="utf-8"/>
-	<link rel = "stylesheet" type = "text/css" href = "firststeps.css"/>
 	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+	<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel = "stylesheet" type = "text/css" href = "firststeps.css"/>
 </head>
 	
 <body class="body">
@@ -13,53 +15,33 @@
 	<header class="mainheader">
 		<img src="../../Images/applyonline.png" id = "image" onmouseover = "newPicture()" onmouseout = "oldPicture()">
 		
-		<nav id="desktopnav">
-			<ul class="parent">
-				<li><a href="../../">Home</a></li>
-				<li><a href="#">Web Apps<a/>
-					<ul class="child">
-						<li>
-							<a href="../../apps/moonRisingApp">Moon Rising App</a>
-						</li>
-					</ul>
-				</li>
-				<li><a href="#">Webpage Designs<a/>
-					<ul class="child">
-						<li>
-							<a href="../shopping">Shopping</a>
-						</li>
-						<li>
-							<a class="selected" href="#">First Steps</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="../../guestbook">Guestbook</a>
-				</li>
-				<li>
-					<a href="../../contact">Contact</a>
-				</li>
-			</ul>
-		</nav>
-
-		<nav id="mobilenav">
-			<ul>
-				<li>
-					<a href="../../">Home</a>
-				</li>
-				<li>
-					<a href="../shopping">Shopping</a>
-				</li>
-				<li>
-					<a class="selected" href="#">First Steps</a>
-				</li>
-				<li>
-					<a href="../../guestbook">Guestbook</a>
-				</li>
-				<li>
-					<a href="../../contact">Contact</a>
-				</li>
-			</ul>
+		<nav class="navbar navbar-default">
+		    <div class="container-fluid">
+		        
+		        <!--menu-->
+		        <div>
+		            <ul class="nav navbar-nav">
+		                <li><a href="/">Home</a></li>
+		                <!--Drop Down Menu-->
+		                <li class="dropdown">
+		                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Web Apps <span class="caret"></span></a>
+		                    <ul class="dropdown-menu">
+		                        <li><a href="/apps/moonRisingApp">Moon Rising App</a></li>
+		                    </ul>
+		                </li>
+		                <!--Drop Down Menu-->
+		                <li class="dropdown">
+		                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Webpage Designs <span class="caret"></span></a>
+		                    <ul class="dropdown-menu">
+		                        <li class="active"><a href="#">First Steps</a></li>
+		                        <li><a href="../shopping">Shopping</a></li>
+		                    </ul>
+		                </li>
+		                <li><a href="/guestbook">Guestbook</a></li>
+		                <li><a href="/contact">Contact</a></li>
+		            </ul>
+		        </div>
+		    </div>
 		</nav>
 	</header>
 	
@@ -75,9 +57,9 @@
 				</footer>
 				
 				<content>
-					<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet dui a nunc ullamcorper porta. Suspendisse 
+					<p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet dui a nunc ullamcorper porta. Suspendisse 
 					venenatis est urna, ut imperdiet enim aliquam sed. Vestibulum leo urna, feugiat porta neque in, venenatis imperdiet tellus. 
-					Nullam ac venenatis sem, ac varius erat. Nam accumsan lorem eu sapien rutrum, at molestie purus. </h4>
+					Nullam ac venenatis sem, ac varius erat. Nam accumsan lorem eu sapien rutrum, at molestie purus.</strong></p>
 					
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet odio laoreet, suscipit turpis sit amet, feugiat urna. 
 					Pellentesque volutpat tempus nibh ut congue. Integer facilisis, est eu blandit ultrices, tortor ligula venenatis ligula, quis 
@@ -144,15 +126,11 @@
 		<p>Copyright &copy; 2015 <a href="http://www.StevenAccardo.com" title ="website1">www.StevenAccardo.com</a></p>
 	</footer>
 	
-	<!--Loading the scripts at the bottom, so the page will load without waiting for the scripts to load-->
-	<!--Load JQuery from the CDN first-->
-	<!--Loading the production version-->
-	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-
-	<!--If CDN fails to load, serve up the local version-->
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/jquery-2.1.4.min.js"><\/script>');</script>
-	<!--The JS file that I create, which holds my JQuery code-->
+	<!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	<script src = "js/firststeps.js"></script>
 	
 </body>
- </html>
+</html>
