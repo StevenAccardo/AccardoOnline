@@ -2,7 +2,6 @@
 
 body {
 	padding: 50px 0px;
-	font-size: 100%;
 	font-style: Arial, 'Lucida Sans Unicode';
 	background-image: url('../Images/contactpagebg.jpg');
 	-webkit-background-size: cover;
@@ -12,10 +11,6 @@ body {
 	background-attachment: fixed;
 	background-position: center center;
     background-repeat: no-repeat;
-}
-
-#mobilenav {
-	display: none;
 }
 
 a {
@@ -30,63 +25,44 @@ a:hover, a:active {
 	background-color: #00feff;
 	color: #FFF;
 	padding: 2px 4px;
-	
 }
 
-.mainheader nav {
+.navbar {
+	width: 97%;
+	margin: auto;
+	border-radius: 0;
+}
+
+.navbar-default {
 	background-color: rgba(0, 102, 102, 0.4);
-	height: 40px;
-
+	border: none;
 }
 
-.mainheader nav ul.parent {
-	list-style:none;
-	margin:0 auto;
-	float: right;
+.navbar-default .navbar-nav li a{
+	color: #fff;
 }
 
-ul.parent > li {
-	float: left;
-	display: inline;
-}
-
-ul.child {
-    display: none;
-	width: 100px;
-	padding: 0;
-	list-style: none;
-	position: absolute;
-	z-index: 100;
-}
-
-ul.child > li {
-	margin:auto;
-}
-
-ul.child a:link {
-	background-color: rgba(0, 102, 102, 0.4);
-	width: 70px;
-	text-align: center;
-}
-
-.child li a:nth-child(2){
-	margin: 3px 0;
-}
-
-.mainheader nav a:link, .mainheader nav a:visited {
-	color: #FFF; 
-	display: inline-block;
-	padding: 10px 25px;
-	height: 20px;
-}
-
-.mainheader nav a:hover, .mainheader nav a:active {
+.navbar-default .navbar-nav li a:hover{
+	color: #fff;
 	background-color: #00feff;
-	text-shadow: none;
 }
 
-.selected {
-	border: solid 2px #FFF;
+.navbar-default .navbar-nav li a:visited{
+	color: #fff;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	background-color: #00feff;
+	color: #fff;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus,  .navbar-default .navbar-nav > .open > a:hover {
+	background-color: #00feff;
+	color: #fff;
+}
+
+.navbar-nav > li > .dropdown-menu {
+	background-color: rgba(0, 102, 102, 0.4);
 }
 
 h2 {
@@ -105,12 +81,7 @@ input, textarea, select {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	
-	
-}
-
-select {
-	width: 220px;
+		
 }
 
 textarea {
@@ -165,8 +136,7 @@ input:hover, textarea:hover, select:hover, input:focus, textarea:focus, select:f
 
 
 
-@media only screen and (min-width: 150px) and (max-width: 700px) and (orientation: portrait)
-{
+@media only screen and (min-width: 150px) and (max-width: 700px) and (orientation: portrait) {
 
 
 	body {
