@@ -90,6 +90,9 @@
 						<li>
 							<a href="/apps/moonRisingApp">Moon Rising App</a>
 						</li>
+						<li>
+							<a href="/apps/drinkorderapp">Drink Order App</a>
+						</li>
 					</ul>
 				</li>
 				<li><a href="#">Webpage Designs<a/>
