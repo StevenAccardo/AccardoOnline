@@ -1,0 +1,153 @@
+@mixin border-radius($radius){
+	-webkit-border-radius: $radius 0 0 0;
+	-moz-border-radius: $radius 0 0 0;
+	border-radius: $radius 0 0 0;
+}
+
+@mixin entry-radius($radius){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin btngradient($topcolor, $botcolor) {
+	background: $topcolor;
+    background: -webkit-linear-gradient($topcolor, $botcolor); 
+    background: -o-linear-gradient($topcolor, $botcolor); 
+    background: -moz-linear-gradient($topcolor, $botcolor);
+    background: linear-gradient($topcolor, $botcolor); 
+}
+
+
+$grey: rgb(152, 152, 152);
+$darkgrey: rgb(58, 68, 67);
+$botborder: rgb(195, 233, 2);
+$footercolor: rgb(229, 229, 229);
+$btnfont: #FFF;
+$topcolor: rgb(194, 232, 1);
+$botcolor: rgb(166, 221, 32);
+$focuscolor: rgb(237, 251, 218);
+
+#container2 {
+	width: 300px;
+	height: 625px;
+	margin: auto;
+	@include border-radius(20px);
+	border: solid 1px $grey;
+	position: relative;
+}
+
+header {
+	height: 40px;
+	@include border-radius(20px);
+	background-color: black;
+	border-bottom: solid 5px $botborder;
+}
+
+img.exit {
+	float: right;
+	width: 15px;
+	margin: 15px 15px 0 0;
+}
+
+img.logo {
+	float: left;
+	width: 100px;
+	margin: 5px 0 0 15px;
+}
+
+div#prechatsurvey {
+	margin: 20px 30px;
+	font-family: Arial;
+}
+
+div#prechatsurvey h4 {
+	margin-bottom: 15px;
+}
+
+div#prechatsurvey form p {
+	margin-top: 3px;
+	margin-bottom: 22px;
+}
+
+div#prechatsurvey label {
+	font-size: 14px;
+	color: $darkgrey;
+}
+
+div#prechatsurvey #fullname {
+	background-image: url('images/icon-form-avatar.png');
+	background-repeat: no-repeat;
+	background-position: 4px 5px;
+	padding-left: 40px;
+}
+
+div#prechatsurvey #phone {
+	background-image: url('images/icon-form-phone.png');
+	background-repeat: no-repeat;
+	background-position: 4px 6px;
+	padding-left: 40px;
+}
+
+#fullname, #phone {
+	width: 198px;
+	@include entry-radius(3px);
+	height: 30px;
+	border: solid 1px $grey;
+}
+
+#stateselect {
+	width: 240px;
+	@include entry-radius(3px);
+	height: 32px;
+	border: solid 1px $grey;
+	color: $grey;
+}
+
+#textbox {
+	resize: none;
+	height: 65px;
+	border: solid 1px $grey;
+	width: 238px;
+	@include entry-radius(3px);
+}
+
+#fullname:focus, #phone:focus, #stateselect:focus, #textbox:focus {
+	background-color: $focuscolor;
+}
+
+#submitbtn {
+	float: right;
+	height: 30px;
+	@include entry-radius(5px);
+	width: 120px;
+	border: none;
+	color: $btnfont;
+	@include btngradient($topcolor, $botcolor);
+	font-weight: 500;
+	margin-top: 0px;
+}
+
+div#prechatsurvey #lastlabel {
+	float: right;
+	clear: both;
+	font-size: 9.5px;
+	margin-top: 4px;
+	color: $grey;
+	font-weight: 600;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	height: 17px;
+	background-color: $footercolor;
+	width: 100%;
+}
+
+img.footlogo {
+	width: 85px;
+	margin-left: 5px;
+	position: absolute;
+	z-index: 5;
+}

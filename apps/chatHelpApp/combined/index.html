@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Chat Help App</title>
+	<meta charset = "utf-8"/>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel = "stylesheet" href = "style/style.css"/>
+</head>
+
+<body>
+
+	<header class="mainheader">
+		<nav class="navbar navbar-default">
+		    <div class="container-fluid">
+		        
+		        <!--menu-->
+		        <div>
+		            <ul class="nav navbar-nav navbar-right">
+		                <li><a href="../../">Home</a></li>
+		                <!--Drop Down Menu-->
+		                <li class="dropdown">
+		                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Web Apps <span class="caret"></span></a>
+		                    <ul class="dropdown-menu">
+		                        <li><a href="../moonRisingApp">Moon Rising App</a></li>
+		                        <li><a href="../drinkorderapp">Drink Order App</a></li>
+		                        <li class="active"><a href="#">Chat Help App</a></li>
+		                    </ul>
+		                </li>
+		                <!--Drop Down Menu-->
+		                <li class="dropdown">
+		                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Webpage Designs <span class="caret"></span></a>
+		                    <ul class="dropdown-menu">
+		                    	<li><a href="../../webpagedesigns/shopping">Shopping</a></li>
+		                        <li><a href="../../webpagedesigns/firststeps">First Steps</a></li>
+		                    </ul>
+		                </li>
+		                <li><a href="../../guestbook">Guestbook</a></li>
+		                <li><a href="../../contact">Contact</a></li>
+		            </ul>
+		        </div>
+		    </div>
+		</nav>
+	</header>
+
+	<div id="container">
+		<header id="appheader">
+			<img class="exit" src="images/btn-close.png"></img>
+			<img class="logo" src="images/logo-best-brands.png"></img>
+		</header>
+
+		<div id="routingguide">
+			<em id="nav"><a>Home</a> / <a>Existing Service</a> / <a>Mobile</a></em>
+			<h4>Which Mobile topic would you like help with?</h4>
+			<ul id="mobileoptions">
+				<li>
+					<img src="images/icon-billing.png"></img><a href="#">Billing and Payments</a>
+				</li>
+				<li>
+					<img src="images/icon-tech-support.png"></img><a href="#">Technical Support</a>
+				</li>
+				<li>
+					<img src="images/icon-login.png"></img><a href="#">Account Login Support</a>
+				</li>
+				<li>
+					<img src="images/icon-other.png"></img><a href="#">Other</a>
+				</li>
+				<li>
+					<img src="images/icon-back-button.png"></img><a href="#" id="backbtn">Back</a>
+				</li>
+			</ul>
+		</div>
+
+		<div id="prechatsurvey">
+			<h4>Which Mobile topic would you like help with?</h4>
+			<form>
+				<label>Full Name:*</label>
+				<p>
+					<input type="text" id="fullname" placeholder="John Doe"/>
+					<label id="namewarning">Full Name is a required field</label>
+				</p>
+				
+				<label>Mobile Phone Number:*</label>
+				<p>
+					<input type="text" id="phone" placeholder="ex: 123-123-1234"/>
+					<label id="nonumwarning">Mobile number is a required field</label>
+					<label id="badnumwarning">Please enter a valid phone number</label>
+				</p>
+				<label>State:</label>
+				<p>
+					<select id="stateselect" size="1">
+						<option value="selectone">Select One</option>
+						<option value="california">California</option>
+					</select>
+				</p>
+
+				<label class="pop">Was your phone purchased in CA?</label>
+				<p>
+					<select class="pop" id="popQ" size="1">
+						<option value="selectone">Select One</option>
+						<option value="yes">Yes</option>
+						<option value="no">No</option>
+					</select>
+				</p>
+
+				<label>Describe your question...</label>
+				<p>
+					<textarea id="textbox"/></textarea>
+				</p>
+				<p>
+				<input type="submit" id="submitbtn" value="Start Chat"/>
+				</p>
+				<label id="lastlabel">* Required field</label>
+			</form>
+		</div>
+		<div id="congrats">
+			<h4>Congratulations!! You have reached the chat agent.</h4>
+		</div>
+		<footer>
+			<img class="footlogo" src="images/poweredby.png"><img>
+		</footer>
+	</div>
+
+
+	<script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-2.2.0.min.js"><\/script>');</script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

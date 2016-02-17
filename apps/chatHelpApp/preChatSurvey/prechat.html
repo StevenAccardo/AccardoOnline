@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Pre-Chat Survey</title>
+	<meta charset = "utf-8"/>
+	<link rel = "stylesheet" type = "text/css" href = "prechat.css"/>
+</head>
+
+<body>
+	<div id="container2">
+		<header>
+			<img class="exit" src="../images/btn-close.png"></img>
+			<img class="logo" src="../images/logo-best-brands.png"></img>
+		</header>
+
+		<div id="prechatsurvey">
+			<h4>Which Mobile topic would you like help with?</h4>
+			<form>
+				<label>Full Name:*</label>
+				<p>
+					<input type="text" id="fullname" placeholder="John Doe"/>
+				</p>
+				<label>Mobile Phone Number:*</label>
+				<p>
+					<input type="text" id="phone" placeholder="ex: 123-123-1234"/>
+				</p>
+				<label>State:</label>
+				<p>
+					<select id = "stateselect" size="1">
+						<option value="selectone">Select One</option>
+						<option value="california">California</option>
+					</select>
+				</p>
+				<label>Describe your question...</label>
+				<p>
+					<textarea id="textbox"/></textarea>
+				</p>
+				<p>
+				<input type="submit" id="submitbtn" value="Start Chat"/>
+				</p>
+				<label id="lastlabel">* Required field</label>
+			</form>
+		</div>
+		<footer>
+			<img class="footlogo" src="../images/logo-tc.png"><img>
+		</footer>
+	</div>
+</body>
+</html>

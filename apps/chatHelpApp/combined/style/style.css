@@ -1,0 +1,274 @@
+/*Routing*/
+/*Prechat*/
+.navbar {
+  width: 90%;
+  margin: auto;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px; }
+
+.navbar-default {
+  background: #c3e902;
+  border: solid 3px black; }
+
+.navbar-default .navbar-nav li a {
+  color: black; }
+
+.navbar-default .navbar-nav li a:hover {
+  color: white; }
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+  background-color: transparent;
+  color: white; }
+
+.navbar-nav > li > .dropdown-menu {
+  background: #c3e902;
+  border: solid 3px black; }
+
+ul.dropdown-menu > li > a:hover {
+  background-color: transparent; }
+
+ul.dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover {
+  background-color: grey;
+  color: white; }
+
+#container {
+  width: 300px;
+  height: 470px;
+  margin: auto;
+  margin-top: 10px;
+  -webkit-border-radius: 20px 0 0 0;
+  -moz-border-radius: 20px 0 0 0;
+  border-radius: 20px 0 0 0;
+  border: solid 1px #989898;
+  position: relative; }
+
+/*Header*/
+#appheader {
+  height: 40px;
+  -webkit-border-radius: 20px 0 0 0;
+  -moz-border-radius: 20px 0 0 0;
+  border-radius: 20px 0 0 0;
+  background-color: black;
+  border-bottom: solid 5px #c3e902; }
+
+img.exit {
+  float: right;
+  width: 15px;
+  margin: 15px 15px 0 0; }
+
+img.logo {
+  float: left;
+  width: 100px;
+  margin: 5px 0 0 15px; }
+
+/*Routing*/
+div#routingguide {
+  font-family: Arial;
+  color: #989898; }
+
+div#routingguide a {
+  text-decoration: none; }
+
+em#nav {
+  font-size: 14px;
+  font-style: normal;
+  margin: 8px 0 25px 30px;
+  float: left; }
+
+em#nav a {
+  color: #83aa1b; }
+
+em#nav a:last-child {
+  color: #989898; }
+
+div#routingguide h4 {
+  color: black;
+  margin: 21px 30px; }
+
+ul#mobileoptions {
+  padding: 0; }
+
+#mobileoptions li {
+  list-style: none;
+  margin-bottom: 10px;
+  display: block; }
+
+#mobileoptions li a {
+  font-size: 14px;
+  display: block;
+  height: 40px;
+  line-height: 40px; }
+
+ul#mobileoptions img {
+  margin: 0 10px 0 30px;
+  padding-top: 4px;
+  float: left; }
+
+#mobileoptions li a:link, #mobileoptions li a:visited {
+  color: #3a4443; }
+
+ul#mobileoptions li a:hover:not(#backbtn) {
+  color: #7b912c;
+  background-color: #edfbda; }
+
+ul#mobileoptions li a:active:not(#backbtn) {
+  background-color: #9ad000;
+  color: #FFF; }
+
+#mobileoptions li:last-child img {
+  width: 21px;
+  padding-top: 9px; }
+
+#mobileoptions li:last-child {
+  margin-top: 20px; }
+
+#mobileoptions li:last-child a {
+  font-weight: 800;
+  color: #989898;
+  width: 100px; }
+
+/*Prechat*/
+div#prechatsurvey {
+  margin: 20px 30px;
+  font-family: Arial;
+  display: none; }
+
+div#prechatsurvey h4 {
+  margin-bottom: 15px; }
+
+div#prechatsurvey form p {
+  margin-top: 3px;
+  margin-bottom: 22px; }
+
+div#prechatsurvey label {
+  font-size: 14px;
+  color: #3a4443; }
+
+div#prechatsurvey #fullname {
+  background-image: url("../images/icon-form-avatar.png");
+  background-repeat: no-repeat;
+  background-position: 4px 5px;
+  padding-left: 40px; }
+
+div#prechatsurvey #phone {
+  background-image: url("../images/icon-form-phone.png");
+  background-repeat: no-repeat;
+  background-position: 4px 6px;
+  padding-left: 40px; }
+
+#fullname, #phone {
+  width: 198px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  height: 30px;
+  border: solid 1px #989898; }
+
+#stateselect {
+  width: 240px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  height: 32px;
+  border: solid 1px #989898;
+  color: #989898; }
+
+/*Popup Question*/
+#popQ {
+  width: 240px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  height: 32px;
+  border: solid 1px #989898;
+  color: #989898; }
+
+.pop {
+  display: none; }
+
+/*-------------*/
+#textbox {
+  resize: none;
+  height: 65px;
+  border: solid 1px #989898;
+  width: 238px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
+
+#fullname:focus, #phone:focus, #stateselect:focus, #textbox:focus {
+  background-color: #edfbda; }
+
+#submitbtn {
+  float: right;
+  height: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width: 120px;
+  border: none;
+  color: #FFF;
+  background: #c2e801;
+  background: -webkit-linear-gradient(#c2e801, #a6dd20);
+  background: -o-linear-gradient(#c2e801, #a6dd20);
+  background: -moz-linear-gradient(#c2e801, #a6dd20);
+  background: linear-gradient(#c2e801, #a6dd20);
+  font-weight: 500;
+  margin-top: 0px; }
+
+div#prechatsurvey #lastlabel {
+  float: right;
+  clear: both;
+  font-size: 9.5px;
+  margin-top: 4px;
+  color: #989898;
+  font-weight: 600; }
+
+/*JavaScript popups*/
+div#prechatsurvey #namewarning {
+  float: right;
+  clear: both;
+  font-size: 10.5px;
+  margin-top: 4px;
+  color: #ffcccb;
+  font-weight: 600;
+  display: none; }
+
+div#prechatsurvey #nonumwarning {
+  float: right;
+  font-size: 10.5px;
+  margin-top: 4px;
+  color: #ffcccb;
+  font-weight: 600;
+  display: none; }
+
+div#prechatsurvey #badnumwarning {
+  float: right;
+  font-size: 10.5px;
+  margin-top: 4px;
+  color: #ffcccb;
+  font-weight: 600;
+  display: none; }
+
+/*Congrats Page*/
+#congrats {
+  margin: 20px 30px;
+  font-family: Arial;
+  display: none; }
+
+/*Footer*/
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 17px;
+  background-color: #e5e5e5;
+  width: 100%; }
+
+img.footlogo {
+  width: 85px;
+  margin-left: 5px;
+  position: absolute;
+  z-index: 5; }
+
+/*# sourceMappingURL=style.css.map */

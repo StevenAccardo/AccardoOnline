@@ -1,0 +1,123 @@
+#container2 {
+  width: 300px;
+  height: 625px;
+  margin: auto;
+  -webkit-border-radius: 20px 0 0 0;
+  -moz-border-radius: 20px 0 0 0;
+  border-radius: 20px 0 0 0;
+  border: solid 1px #989898;
+  position: relative; }
+
+header {
+  height: 40px;
+  -webkit-border-radius: 20px 0 0 0;
+  -moz-border-radius: 20px 0 0 0;
+  border-radius: 20px 0 0 0;
+  background-color: black;
+  border-bottom: solid 5px #c3e902; }
+
+img.exit {
+  float: right;
+  width: 15px;
+  margin: 15px 15px 0 0; }
+
+img.logo {
+  float: left;
+  width: 100px;
+  margin: 5px 0 0 15px; }
+
+div#prechatsurvey {
+  margin: 20px 30px;
+  font-family: Arial; }
+
+div#prechatsurvey h4 {
+  margin-bottom: 15px; }
+
+div#prechatsurvey form p {
+  margin-top: 3px;
+  margin-bottom: 22px; }
+
+div#prechatsurvey label {
+  font-size: 14px;
+  color: #3a4443; }
+
+div#prechatsurvey #fullname {
+  background-image: url("images/icon-form-avatar.png");
+  background-repeat: no-repeat;
+  background-position: 4px 5px;
+  padding-left: 40px; }
+
+div#prechatsurvey #phone {
+  background-image: url("images/icon-form-phone.png");
+  background-repeat: no-repeat;
+  background-position: 4px 6px;
+  padding-left: 40px; }
+
+#fullname, #phone {
+  width: 198px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  height: 30px;
+  border: solid 1px #989898; }
+
+#stateselect {
+  width: 240px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  height: 32px;
+  border: solid 1px #989898;
+  color: #989898; }
+
+#textbox {
+  resize: none;
+  height: 65px;
+  border: solid 1px #989898;
+  width: 238px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
+
+#fullname:focus, #phone:focus, #stateselect:focus, #textbox:focus {
+  background-color: #edfbda; }
+
+#submitbtn {
+  float: right;
+  height: 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width: 120px;
+  border: none;
+  color: #FFF;
+  background: #c2e801;
+  background: -webkit-linear-gradient(#c2e801, #a6dd20);
+  background: -o-linear-gradient(#c2e801, #a6dd20);
+  background: -moz-linear-gradient(#c2e801, #a6dd20);
+  background: linear-gradient(#c2e801, #a6dd20);
+  font-weight: 500;
+  margin-top: 0px; }
+
+div#prechatsurvey #lastlabel {
+  float: right;
+  clear: both;
+  font-size: 9.5px;
+  margin-top: 4px;
+  color: #989898;
+  font-weight: 600; }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 17px;
+  background-color: #e5e5e5;
+  width: 100%; }
+
+img.footlogo {
+  width: 85px;
+  margin-left: 5px;
+  position: absolute;
+  z-index: 5; }
+
+/*# sourceMappingURL=prechat.css.map */
