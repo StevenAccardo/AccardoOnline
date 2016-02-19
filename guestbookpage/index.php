@@ -93,6 +93,9 @@
 						<li>
 							<a href="/apps/drinkorderapp">Drink Order App</a>
 						</li>
+						<li>
+							<a href="/apps/chatHelpApp">Chat Help App</a>
+						</li>
 					</ul>
 				</li>
 				<li><a href="#">Webpage Designs<a/>
