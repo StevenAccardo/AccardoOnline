@@ -41,6 +41,10 @@ p {
 	font-weight: 600;
 }
 
+#text p {
+	font-size: 20px;
+}
+
 #first {
 	color: #357ad9;
 }
@@ -64,6 +68,12 @@ p {
 #bottomselections a {
 	color: #357ad9;
 	text-decoration: none;
+}
+
+h2 a:active {
+	position: relative;
+	top: 1px;
+	background: transparent;
 }
 
 #aboutme {
@@ -133,8 +143,36 @@ input:hover {
 	padding-left: 25px;
 }
 
-@media only screen and (min-width: 150px) and (max-width: 1000px) and (orientation: portrait)
-{
+@media only screen and (min-width: 1001px) and (max-width: 1300px) and (orientation: portrait) {
+	#aboutme {
+	height:320px;
+	}
+
+	#webmaster {
+	    height:320px;
+	}
+
+	#github {
+		height:320px;
+	}
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1300px) and (orientation: landscape) {
+	#aboutme {
+	height:320px;
+	}
+
+	#webmaster {
+	    height:320px;
+	}
+
+	#github {
+		height:320px;
+	}
+}
+
+
+@media only screen and (min-width: 701px) and (max-width: 1000px) and (orientation: portrait) {
 
 #logo {
 	padding-left: 0px;
@@ -155,6 +193,7 @@ h1 {
 }
 
 #aboutme {
+	height:200px;
     width: 100%;
 	padding-right: 0%;
 	padding-left: 0%;
@@ -163,11 +202,13 @@ h1 {
 
 #webmaster {
     width: 100%;
+    height:200px;
 	padding-left: 0%;
 	padding-right: 0%;
 }
 
 #github {
+	height:200px;
     width: 100%;
 	padding: 0%;
 }
@@ -193,8 +234,7 @@ input {
 
 }
 
-@media only screen and (min-width: 150px) and (max-width: 1000px) and (orientation: landscape)
-{
+@media only screen and (min-width: 701px) and (max-width: 1000px) and (orientation: landscape) {
 
 #logo {
 	padding-left: 0px;
@@ -215,6 +255,69 @@ h1 {
 }
 
 #aboutme {
+	height:300px;
+    width: 100%;
+	padding-right: 0%;
+	padding-left: 0%;
+	
+}
+
+#webmaster {
+	height:300px;
+    width: 100%;
+	padding-left: 0%;
+	padding-right: 0%;
+}
+
+#github {
+	height:300px;
+    width: 100%;
+	padding-left: 0%;
+}
+
+input {
+	width: 100%;
+	margin: auto;
+}
+
+#bottom {
+	height: 50px;
+}
+
+#mainfooter {
+	height: 40px;
+}
+
+#mainfooter p {
+	padding-top: 2%;
+	padding-left: 1%;
+	font-size: 12px;
+}
+
+}
+
+@media only screen and (min-width: 150px) and (max-width: 700px) and (orientation: portrait) {
+
+#logo {
+	padding-left: 0px;
+}	
+	
+#backgroundImage {
+	height: 100px;
+}
+
+h1 {
+	font-size: 20px;
+	font-weight: 400;
+}	
+
+#bottomselections p {
+	font-size: 14px;
+	text-align:center;
+}
+
+#aboutme {
+	height:275px;
     width: 100%;
 	padding-right: 0%;
 	padding-left: 0%;
@@ -223,13 +326,80 @@ h1 {
 
 #webmaster {
     width: 100%;
+    height:275px;
 	padding-left: 0%;
 	padding-right: 0%;
+	margin-top: 20%;
 }
 
 #github {
+	height:275px;
+    width: 100%;
+	padding: 0%;
+	margin-top: 20%;
+}
+
+input {
+	width: 100%;
+	margin: auto;
+}
+
+#bottom {
+	height: 50px;
+}
+
+#mainfooter {
+	height: 40px;
+}
+
+#mainfooter p {
+	padding-top: 2%;
+	padding-left: 1%;
+	font-size: 12px;
+}
+
+}
+
+@media only screen and (min-width: 150px) and (max-width: 700px) and (orientation: landscape) {
+
+#logo {
+	padding-left: 0px;
+}	
+	
+#backgroundImage {
+	height: 100px;
+}
+
+h1 {
+	font-size: 20px;
+	font-weight: 400;
+}	
+
+#bottomselections p {
+	font-size: 14px;
+	text-align:center;
+}
+
+#aboutme {
+	height: 220px;
+    width: 100%;
+	padding-right: 0%;
+	padding-left: 0%;
+}
+
+#webmaster {
+	height: 220px;
     width: 100%;
 	padding-left: 0%;
+	padding-right: 0%;
+	margin-top: 20%;
+}
+
+#github {
+	height: 220px;
+    width: 100%;
+	padding-left: 0%;
+	margin-top: 20%;
 }
 
 input {

@@ -1,21 +1,8 @@
 $(function(){
 	
-	$('#title1').hover(function(){
-		$(this).css('font-size', '+=4px');		
+	$('#title1, #title2, #title3').hover(function(){
+		$(this).css('font-size', '+=8px');		
 		}, function(){
-		$(this).css('font-size', '-=4px');
+		$(this).css('font-size', '-=8px');
 		});
-		
-	$('#title2').hover(function(){
-		$(this).css('font-size', '+=4px');		
-		}, function(){
-		$(this).css('font-size', '-=4px');
-		});	
-
-	$('#title3').hover(function(){
-		$(this).css('font-size', '+=4px');		
-		}, function(){
-		$(this).css('font-size', '-=4px');
-		});
-	
 });
