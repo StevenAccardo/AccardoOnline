@@ -34,7 +34,7 @@ a:hover, a:active {
 
 }
 
-.mainheader nav ul{
+.mainheader nav ul {
 	list-style:none;
 	margin:0;
 	padding: 0;
@@ -64,7 +64,6 @@ ul.child {
 
 .mainheader nav a:link, .mainheader nav a:visited {
 	color: #FFF;
-	
 }
 
 .mainheader nav a:hover, .mainheader nav a:active {
@@ -73,7 +72,6 @@ ul.child {
 	border-style: solid;
 	width: 10%;
 	border-color: #7ba693;
-	padding: 1%;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
@@ -96,6 +94,10 @@ h1 {
 	border-radius: 30px;
 	width: 50%;
 }
+
+ .inputClass {
+ 	display: inline;
+ }
 
 textarea {
 	padding: 30px;
@@ -165,8 +167,8 @@ form {
 	border-radius: 5px;
 }
 
-@media only screen and (min-width: 150px) and (max-width: 900px) and (orientation: portrait)
-{
+@media only screen and (min-width: 150px) and (max-width: 900px) and (orientation: portrait) {
+	
 	/*Background-attachment:fixed and background-size:cover do not work on IOS7 because they have been disabled due to the high repaint cost, 
 	which decimates scrolling performance*/
 	body {
@@ -191,7 +193,10 @@ form {
 	padding: 2% 1%;
 	width: 95%;
 	}
-
+	
+	.inputClass {
+ 		display: block;
+ 	}
 	
 	textarea {
 	padding: 30px;
@@ -226,8 +231,7 @@ form {
 	
 }
 
-@media only screen and (min-width: 150px) and (max-width: 900px) and (orientation: landscape)
-{
+@media only screen and (min-width: 150px) and (max-width: 900px) and (orientation: landscape) {
 	/*Background-attachment:fixed and background-size:cover do not work on IOS7 because they have been disabled due to the high repaint cost, 
 	which decimates scrolling performance*/
 	body {
@@ -253,7 +257,10 @@ form {
 	width: 95%;
 	}
 
-	
+	.inputClass {
+		display: block;
+ 	}
+
 	textarea {
 	padding: 30px;
 	width: 65%;

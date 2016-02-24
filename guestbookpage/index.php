@@ -123,10 +123,14 @@
 	</header>
 <center>
 <form action = "<?php echo $_SERVER["PHP_SELF"]; ?>" method="POST"> <!--Returns back to the original page after clicking the submit button, instead of loading the .php script -->
+	<div class="inputClass">
 	<label for="txt_name">Name: </label>
 	<input type="text" name="txt_name" placeholder = "John Doe">
+	</div>
+	<div class="inputClass">
 	<label for="txt-email">Email: </label>
 	<input type="text" name="txt_email" placeholder = "name@email.com"><br><br>
+	</div>
 	<label for="txt-email">Comment: </label><br>
 	<textarea rows="10" name="txt_comment" placeholder = "Type here..."></textarea><br><br>
 	<center>

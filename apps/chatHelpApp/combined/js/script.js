@@ -1,7 +1,7 @@
 $(function() {
 
 	//Swithces to Pre-chat Survey
-	$('li:first-child a').click(function() {
+	$('#mobileoptions li:first-child a').click(function() {
 
 		$('#routingguide').hide();
 		$('#container').css('height', '625px');
