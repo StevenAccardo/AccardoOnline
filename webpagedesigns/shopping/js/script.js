@@ -1,9 +1,53 @@
 $(function() { 
 
-		   /* -----------------
+		   /*---------------------------
+		    State Search Using jQuery UI
+		   ---------------------------*/
+	var $searchList = $('#search') ;
+	var $find = $('#find');
+
+	var availableTags = ["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware",
+	"District Of Columbia","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa",
+	"Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota",
+	"Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey",
+	"New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon",
+	"Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah",
+	"Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"];
+
+	$searchList.autocomplete({
+		source: availableTags
+	});
+
+	$find.on('click', function() {
+		var $searchValue = $searchList.val();
+		var correct = $.inArray($searchValue, availableTags);
+		if (correct >= 0) {
+			alert('You just selected ' + $searchValue + '.');
+		}
+		else {
+			alert('Opps! Please check your entry for errors, and try again.')
+		}
+	});
+
+
+	$searchList.bind('keypress', function(e) {
+		var code = e.keyCode || e.which
+		if(code == 13) {
+			var $searchValue2 = $searchList.val()
+			var correct2 = $.inArray($searchValue2, availableTags);
+
+			if (correct2 >= 0) {
+				alert('You just selected ' + $searchValue2 + '.');
+			}
+			else {
+			alert('Opps! Please check your entry for errors, and try again.')
+			}
+		}
+	});
+
+		   /*-----------------
 		   Product Dropdowns
 		   ----------------- */
-
 
 	$('#cereal img, #cereal .product, #cerealLinks').click(function(){
 		$('#title1').show(500);

@@ -63,6 +63,16 @@ body {
   color: #002b5a;
   margin-bottom: 5px; }
 
+.ui-autocomplete {
+  background-color: #f3f3f3;
+  list-style: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  width: 10%;
+}
+
 #states, button {
   display: none;
 }
@@ -103,7 +113,8 @@ body {
   border-radius: 3px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 2px #fff inset;
   padding: 4%;
-  width: 35%;
+  width: 45%;
+  cursor: pointer;
   }
 
 .firstrows {
@@ -151,7 +162,12 @@ option {
 
 .product {
   color: #002b5a;
-  font-size: 17px; }
+  font-size: 17px;
+}
+
+.productTitleLink {
+  cursor: pointer;
+}
 
 .price {
   color: #4987ca;
@@ -204,11 +220,15 @@ ul.productlist li {
   margin-left: 0; }
 
 ul.productlist li img {
-  width: 100%; }
+  width: 100%; 
+  cursor: pointer;
+}
 
 ul.productlist li > a {
   color: #002b5a;
-  font-size: 13px; }
+  font-size: 13px;
+  cursor: pointer;
+}
 
 .popups {
   background-color: #FFF;

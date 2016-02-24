@@ -54,66 +54,10 @@
 
                 <div id="findercontainer">
                     <h2 id="finder">State Finder</h2>
-                    <p id="findertext">Morbi ac hendrerit nulla. Sed nec ex commodo</p> <!--This wasn't included in the original file. I added it, to match the final images.-->
-                    <form>
-                        
-                        <select id="states">
-                            <option value="">Select State</option>
-                            <option value="AL">Alabama</option>
-                            <option value="AK">Alaska</option>
-                            <option value="AZ">Arizona</option>
-                            <option value="AR">Arkansas</option>
-                            <option value="CA">California</option>
-                            <option value="CO">Colorado</option>
-                            <option value="CT">Connecticut</option>
-                            <option value="DE">Delaware</option>
-                            <option value="DC">District Of Columbia</option>
-                            <option value="FL">Florida</option>
-                            <option value="GA">Georgia</option>
-                            <option value="HI">Hawaii</option>
-                            <option value="ID">Idaho</option>
-                            <option value="IL">Illinois</option>
-                            <option value="IN">Indiana</option>
-                            <option value="IA">Iowa</option>
-                            <option value="KS">Kansas</option>
-                            <option value="KY">Kentucky</option>
-                            <option value="LA">Louisiana</option>
-                            <option value="ME">Maine</option>
-                            <option value="MD">Maryland</option>
-                            <option value="MA">Massachusetts</option>
-                            <option value="MI">Michigan</option>
-                            <option value="MN">Minnesota</option>
-                            <option value="MS">Mississippi</option>
-                            <option value="MO">Missouri</option>
-                            <option value="MT">Montana</option>
-                            <option value="NE">Nebraska</option>
-                            <option value="NV">Nevada</option>
-                            <option value="NH">New Hampshire</option>
-                            <option value="NJ">New Jersey</option>
-                            <option value="NM">New Mexico</option>
-                            <option value="NY">New York</option>
-                            <option value="NC">North Carolina</option>
-                            <option value="ND">North Dakota</option>
-                            <option value="OH">Ohio</option>
-                            <option value="OK">Oklahoma</option>
-                            <option value="OR">Oregon</option>
-                            <option value="PA">Pennsylvania</option>
-                            <option value="RI">Rhode Island</option>
-                            <option value="SC">South Carolina</option>
-                            <option value="SD">South Dakota</option>
-                            <option value="TN">Tennessee</option>
-                            <option value="TX">Texas</option>
-                            <option value="UT">Utah</option>
-                            <option value="VT">Vermont</option>
-                            <option value="VA">Virginia</option>
-                            <option value="WA">Washington</option>
-                            <option value="WV">West Virginia</option>
-                            <option value="WI">Wisconsin</option>
-                            <option value="WY">Wyoming</option>
-                        </select>
-                        <input type="text" id="search" onkeyup="searchstate()"placeholder="Search Hotels"><img src="images/search.png"></img>
-                        <!--<button type="submit">Submit</button>-->
-                    </form>
+                    <p id="findertext">Morbi ac hendrerit nulla. Sed nec ex commodo</p>
+
+                    <input type="text" id="search" placeholder="Search Hotels"><img src="images/search.png"></img>
+                    <input type="button" id="find" value="Find!">
                 </div>
             </section>
 
@@ -172,28 +116,28 @@
                 </div>
                 <ul class="productlist">
                     <li id="cereal">
-                        <p class="product">Product Title 1</p>
+                        <p class="product productTitleLink">Product Title 1</p>
                         <p class="price">Starting at $500 </p>
                         <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br><br></p>
                         <img src="images/cereal_b.jpg"></img>
                         <a id="cerealLinks">Learn More &gt</a>
                     </li>
                     <li id="flower">
-                        <p class="product">Product Title 2</p>
+                        <p class="product productTitleLink">Product Title 2</p>
                         <p class="price">Starting at $1900</p>
                         <p class="details">Donec ornare magna sit amet erat molestie sollicitudin ac vitae lectus.</p>
                         <img src="images/flower_b.jpg"></img>
                         <a id="flowerLinks">Learn More &gt</a>
                     </li>
                     <li id="machine">
-                        <p class="product">Product Title 3</p>
+                        <p class="product productTitleLink">Product Title 3</p>
                         <p class="price">Starting at $2730</p>
                         <p class="details">Cras non metus sed odio tristique imperdiet.<br><br></p>
                         <img src="images/machine_b.jpg"></img>
                         <a id="machineLinks">Learn More &gt</a>
                     </li>
                     <li id="candy">
-                        <p class="product">Product Title 4</p>
+                        <p class="product productTitleLink">Product Title 4</p>
                         <p class="price">Starting at $731</p>
                         <p class="details">Pellentesque mattis tellus ut molestie dapibus.<br><br></p>
                         <img src="images/candy_b.jpg"></img>
@@ -260,6 +204,7 @@
   
         <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/jquery-2.1.4.min.js"><\/script>');</script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         <script src="js/script.js"></script>
